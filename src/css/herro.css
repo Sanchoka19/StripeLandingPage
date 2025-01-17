@@ -1,0 +1,114 @@
+.hero-container {
+    position: relative;
+    border: 2px solid red;
+    overflow-x: hidden;
+}
+
+header {
+    font-family: sans-serif;
+    max-width: 1080px;
+    width: 100%;
+    /* background-color: brown; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px 12px 12px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.company-name {
+    font-weight: 1000;
+    font-size: 1.5rem;
+    margin: 5.5px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 523.55px;
+}
+
+.contact-sales {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+
+.contact-sales-holder {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.contact-sales a {
+    color: rgba(225, 133, 56, 1);
+}
+
+.contact-sales-holder img {
+    position: absolute;
+    right: -17px;
+    top: 5px;
+}
+
+.contact-sales button {
+    padding: 3px 12px 6px 16px;
+    display: flex;
+    align-items: center;
+    gap: 4.8px;
+    width: 91.22px;
+    height: 33px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(225, 133, 56, 1);
+    border: none;
+    border-radius: 16.5px;
+}
+
+/* .element {
+    width: 2000px;
+    left: -98px;
+    top: -316px;
+    height: 580px;
+    background: linear-gradient(150deg,
+            #a960ee, #ff333d, #90e0ff, #ffcb57,
+            rgba(169, 96, 238, 0.189), rgba(255, 51, 61, 0.277),
+            rgba(144, 224, 255, 0.193), rgba(255, 202, 87, 0.193));
+    background-size: 200% 100%;
+    animation: wave-animation 20s ease-in-out infinite;
+    border-radius: 50%;
+
+    position: absolute;
+    rotate: -12deg;
+    transform-origin: center center;
+}
+
+@keyframes wave-animation {
+    0% {
+        background-position: 20% 25%;
+    }
+
+    25% {
+        background-position: 25% 50%;
+    }
+
+    50% {
+        background-position: 50% 60%;
+    }
+
+    75% {
+        background-position: 75% 50%;
+    }
+
+    100% {
+        background-position: 20% 25%;
+    }
+} */
