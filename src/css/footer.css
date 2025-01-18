@@ -1,0 +1,89 @@
+
+footer {
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo h2 {
+    font-size: 28px;
+    color: #0A2540;
+}
+
+.footer-logo span {
+    color: #0A2540;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    flex: 3;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 0;
+}
+
+.footer-column h3 {
+    font-size:  13.59px;
+    margin-bottom: 10px;
+    color: #0A2540;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #0A2540;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #0A2540;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: #364657;
+    font-size: 13.71px;
+    
+}
+
+.united-icon{
+    position: relative;
+    
+}
+
+.united-icon img{
+    position: absolute;
+    left: -18px;
+    top: 4px;
+}

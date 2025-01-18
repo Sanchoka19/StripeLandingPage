@@ -1,5 +1,6 @@
 @import url("./herro.css");
 @import url("./logoContainer.css");
+@import url("./footer.css");
 
 
 @font-face {
@@ -22,7 +23,7 @@ button,li,a {
 }
 body{
     /* scrollbar-width: none; */
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 ul {

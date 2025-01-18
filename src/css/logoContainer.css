@@ -1,22 +1,29 @@
+.logo{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo-wrapper{
+    display: flex;
+    width: 1080px;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.logo-compani-conteiner{
+    display: flex;
+
+}
 .logo-grid {
+    width: 500px;
+    justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    gap: 20px; 
-    padding: 20px;
-}
+} 
 
-.logo-item  {
-    width: 120px;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-item img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
