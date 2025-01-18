@@ -1,10 +1,12 @@
 @import url("./herro.css");
+@import url("./logoContainer.css");
 
 
 @font-face {
     font-family: inter;
     src: url("../fonts/Inter-VariableFont_opsz\,wght.ttf");
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -30,6 +32,3 @@ ul {
 a {
     text-decoration: none;
 }
-
-
-
