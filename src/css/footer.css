@@ -1,15 +1,18 @@
-
 footer {
     background-color: #f7f7f7;
-    padding: 40px 20px;
+    display: flex;
+    align-items: center;
 }
 
 .footer-container {
+    padding: 16px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1200px;
+    width: 1080px;
     margin: 0 auto;
+    border-left: 2px dashed rgba(128, 128, 128, 0.377);
+    border-right: 2px dashed rgba(128, 128, 128, 0.377);
 }
 
 .footer-logo {
@@ -20,6 +23,13 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    position: relative;
+}
+
+.text{
+    position: absolute;
+    top: 37px;
+    left: 30px;
 }
 
 .footer-logo h2 {
@@ -42,11 +52,12 @@ footer {
 .footer-column {
     flex: 1;
     min-width: 200px;
-    margin: 10px 0;
+    padding: 0 16px;
+    border-left: 2px dashed rgba(128, 128, 128, 0.377);
 }
 
 .footer-column h3 {
-    font-size:  13.59px;
+    font-size: 13.59px;
     margin-bottom: 10px;
     color: #0A2540;
 }
@@ -62,11 +73,11 @@ footer {
 .footer-column ul li a {
     text-decoration: none;
     color: #0A2540;
-    transition: color 0.3s;
+    transition: .2s ease;
 }
 
 .footer-column ul li a:hover {
-    color: #0A2540;
+    color: #0a254042;
 }
 
 .footer-bottom {
@@ -74,16 +85,16 @@ footer {
     margin-top: 20px;
     color: #364657;
     font-size: 13.71px;
-    
+
 }
 
-.united-icon{
+.united-icon {
     position: relative;
-    
+
 }
 
-.united-icon img{
+.united-icon img {
     position: absolute;
-    left: -18px;
+    left: 0;
     top: 4px;
 }

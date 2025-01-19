@@ -1,6 +1,7 @@
 @import url("./herro.css");
 @import url("./logoContainer.css");
 @import url("./footer.css");
+@import url("./mainContainer.css");
 
 
 @font-face {
@@ -18,10 +19,13 @@ html {
     font-family: inter;
 }
 
-button,li,a {
+button,
+li,
+a {
     cursor: pointer;
 }
-body{
+
+body {
     /* scrollbar-width: none; */
     overflow-x: hidden;
 }
@@ -32,4 +36,8 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+li {
+    transition: .2s ease;
 }
