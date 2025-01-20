@@ -56,8 +56,184 @@
 }
 
 .main-container-content:nth-child(5) {
-    height: 449px;
+   
 }
+
+.main-container-content:nth-child(5) .main-container-item:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* modular solutions / conteiner(5)*/
+.main-container-content:nth-child(5) .main-container-item:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.text-section {
+    max-width: 460px;
+    width: 100%;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.subtitle {
+    color: #635BFF;
+    font-size: 16.73px;
+
+}
+
+.title {
+    font-size: 51.63px;
+    font-weight: bold;
+    line-height: 68px;
+    color: #0A2540;
+
+}
+
+.description {
+    font-size: 17.58px;
+    line-height: 28px;
+    color: #425466;
+}
+
+
+
+
+
+/* Card Styles */
+.card {
+    width: 320px;
+    height: 200px;
+    background-color: #000;
+    color: white;
+    border-radius: 15px;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Sim Chip */
+.sim-img {
+    position: absolute;
+    top: 35px;
+    left: 20px;
+}
+
+.sim-img img {
+    width: 40px;
+}
+
+/* Brand Name */
+.brand {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+/* Card Footer */
+.card-footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Card Name */
+.card-name {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Footer Right Section */
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.commercial {
+    font-size: 12px;
+    color: #bfbfbf;
+    margin-bottom: 5px;
+}
+
+.footer-right img {
+    width: 40px;
+}
+
+
+.card2 {
+    width: 320px;
+    height: 200px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    position: absolute;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: 1s ease;
+
+
+}
+
+.card2:hover{
+    margin-bottom: 40px;
+    
+}
+.card3 {
+    width: 320px;
+    height: 200px;
+    background-color: rgb(45, 91, 45);
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main-container-item {
     display: flex;
@@ -79,12 +255,9 @@
     height: 516.74px;
 }
 
-.card{
-    width: 523px;
-    height: 404px;
-}
 
-.main-container-phone{
+
+.main-container-phone {
     width: 303px;
     grid-row-end: 617px;
 }
