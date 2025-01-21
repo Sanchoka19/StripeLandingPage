@@ -38,6 +38,21 @@ iframe {
     position: absolute;
     left: 641px;
     bottom: -375px;
+    animation: roundAbout 700s ease infinite;
+}
+
+@keyframes roundAbout {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .global-comrce-content {

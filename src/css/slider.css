@@ -140,7 +140,7 @@
 /* BMW container */
 
 #bmw .amazon-card {
-    background: url("../images/car-bmw.webp");
+    background: url("../images/bmw-car.webp");
     width: 810px;
     height: 410px;
     background-repeat: no-repeat;
@@ -260,7 +260,7 @@
 
 /* twilio card */
 #twilo .amazon-card {
-    background: url("../images/Twilio_Laptop_Resize.png");
+    background: url("../images/twilio.webp");
     width: 810px;
     height: 410px;
     background-repeat: no-repeat;
