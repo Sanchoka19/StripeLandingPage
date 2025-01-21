@@ -3,6 +3,7 @@
 @import url("./footer.css");
 @import url("./mainContainer.css");
 @import url("./globe.css");
+@import url("./slider.css");
 
 @font-face {
     font-family: inter;
@@ -17,6 +18,7 @@
 
 html {
     font-family: inter;
+    scroll-behavior: smooth;
 }
 
 button,

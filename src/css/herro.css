@@ -91,7 +91,7 @@ header nav ul li:hover {
     display: inline-flex;
     align-items: center;
     gap: 4.8px;
-    width: 91.22px;
+    width: 96.22px;
     height: 33px;
     background-color: rgba(255, 255, 255, 1);
     color: rgba(225, 133, 56, 1);
@@ -99,11 +99,11 @@ header nav ul li:hover {
     border-radius: 16.5px;
     font-size: 13.83px;
     position: relative;
+    transition: .3s ease;
 }
 
 .contact-sales button:hover{
     background-color: rgba(0, 0, 0, 0.26);
-    transition: .3s ease;
 }
 
 .contact-sales button img {
