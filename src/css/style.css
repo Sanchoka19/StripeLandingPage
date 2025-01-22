@@ -27,10 +27,23 @@ a {
     cursor: pointer;
 }
 
-body {
-    /* scrollbar-width: none; */
+.body {
+    overflow: auto;
+    /* Allows scrolling */
     overflow-x: hidden;
+
 }
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
+body {
+    scrollbar-width: none;
+    /* Firefox */
+}
+
 
 ul {
     list-style: none;

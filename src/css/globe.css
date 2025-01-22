@@ -39,6 +39,7 @@ iframe {
     left: 641px;
     bottom: -375px;
     animation: roundAbout 700s ease infinite;
+    scrollbar-width: 0;
 }
 
 @keyframes roundAbout {
