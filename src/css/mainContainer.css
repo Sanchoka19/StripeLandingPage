@@ -32,7 +32,6 @@
 }
 
 .main-container-content {
-    border: 2px solid black;
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -57,10 +56,10 @@
 
 .main-container-content:nth-child(5) {
     height: 449px;
-   
 }
 
-.main-container-content:nth-child(1) .main-container-item:nth-child(2) ..main-container-content:nth-child(5) .main-container-item:nth-child(2){
+.main-container-content:nth-child(1) .main-container-item:nth-child(2),
+.main-container-content:nth-child(5) .main-container-item:nth-child(2) {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -68,11 +67,11 @@
 
 
 /* modular solutions / conteiner(1)*/
-.main-container-content:nth-child(1) .main-container-item:nth-child(1),  {
+.main-container-content:nth-child(1) .main-container-item:nth-child(1) {
     display: flex;
     align-items: center;
     justify-content: center;
-   
+
 }
 
 .text-section {
@@ -87,7 +86,6 @@
 .subtitle {
     color: #635BFF;
     font-size: 16.73px;
-
 }
 
 .title {
@@ -95,7 +93,6 @@
     font-weight: bold;
     line-height: 68px;
     color: #0A2540;
-
 }
 
 .description {
@@ -104,22 +101,6 @@
     color: #425466;
 }
 
-
-
-
-
-/* Card Styles */
-.card {
-    width: 320px;
-    height: 200px;
-    background-color: #000;
-    color: white;
-    border-radius: 15px;
-    position: relative;
-    padding: 20px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-}
 
 /* Sim Chip */
 .sim-img {
@@ -176,65 +157,163 @@
     width: 40px;
 }
 
-
-.card2 {
-    width: 320px;
-    height: 200px;
-    background-color: white;
-    color: black;
-    border-radius: 15px;
-    position: absolute;
-    padding: 20px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    transition: 1s ease;
-
-
-}
-
-.card2:hover{
-    margin-bottom: 40px;
-    
-}
+/* Card Styles */
+.card,
+.card2,
 .card3 {
     width: 320px;
     height: 200px;
-    background-color: rgb(45, 91, 45);
-    color: white;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    position: relative;
-
+    position: absolute;
+    animation: stack 8s infinite ease-in-out;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    /* Smooth transition */
 }
 
+.card {
+    background-color: #000;
+    color: white;
+    z-index: 1;
+    animation-delay: 0s;
+}
 
+.card2 {
+    background-color: white;
+    color: black;
+    z-index: 2;
+    animation-delay: 2s;
+}
 
+.card3 {
+    background-color: #27BB86;
+    color: white;
+    z-index: 3;
+    animation-delay: 4s;
+}
 
+@keyframes stack {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+        z-index: 3;
+        /* Last card on top */
+    }
 
+    30% {
+        transform: translateY(50px) scale(0.95);
+        /* Slight shrink as it moves down */
+        opacity: 1;
+        z-index: 2;
+        /* Second card moves */
+    }
 
+    50% {
+        transform: translateY(100px) scale(0.9);
+        /* Shrinks more as it moves */
+        opacity: 1;
+        z-index: 1;
+        /* First card moves to the bottom */
+    }
 
+    60% {
+        transform: translateY(150px) scale(0.85);
+        /* Shrinks and disappears */
+        opacity: 0;
+        z-index: 0;
+        /* Last card moves out of view */
+    }
 
+    70% {
+        transform: translateY(180px) scale(0.8);
+        /* Card further shrinks out of view */
+        opacity: 0;
+        z-index: 0;
+        /* Still out of view */
+    }
 
+    80% {
+        transform: translateY(-10px) scale(1.05);
+        /* Start reappearing with slight grow */
+        opacity: 0.5;
+        /* Fade in */
+        z-index: 3;
+        /* Last card on top */
+    }
 
+    90% {
+        transform: translateY(0) scale(1);
+        /* Full size and fully visible */
+        opacity: 1;
+        z-index: 3;
+        /* Last card stays on top */
+    }
 
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+        z-index: 3;
+        /* Last card stays on top */
+    }
+}
 
+.green-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
+.green-circle2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
 
+.green-circle3 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
+.linear-green-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
+.linear-green-img2 {
+    position: absolute;
+    top: 48%;
+    transform: translateY(-50%);
+}
 
+.linear-green-img3 {
+    position: absolute;
+    top: 46%;
+    transform: translateY(-50%);
+}
 
+.linear-green-img4 {
+    position: absolute;
+    top: 44%;
+    transform: translateY(-50%);
+}
 
+.linear-green-img5 {
+    position: absolute;
+    top: 42%;
+    transform: translateY(-50%);
+}
 
-
-
-
-
-
-
-
+/* .card2:hover {
+    margin-bottom: 40px;
+    animation: roles 5s ease infinite;
+} */
 
 
 .main-container-item {
@@ -256,8 +335,6 @@
     width: 331px;
     height: 516.74px;
 }
-
-
 
 .main-container-phone {
     width: 303px;
