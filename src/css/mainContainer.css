@@ -350,3 +350,143 @@
         border-left: none;
     }
 }
+
+
+
+
+
+
+/* Container */
+.main-container-content:nth-child(3) .main-container-item:nth-child(2) .pricing-container{
+    width: 438px;
+    height: 345px;
+    background: red;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.main-container-content:nth-child(3) .main-container-item:nth-child(2) header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6c47ff;
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #6c47ff;
+}
+
+/* Pricing Plans */
+.pricing-plans {
+    display: flex;
+    justify-content: space-around;
+    padding: 9px 0 12px 0;
+    gap: 20px;
+}
+
+.plan {
+    padding: 17px 13px 44px 13px;
+    border-radius: 10px;
+    width: 135px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+   
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+    border: 2px solid #6c47ff;
+}
+
+.plan h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.plan .users {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.plan .price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #6c47ff;
+}
+
+.plan .price span {
+    font-size: 16px;
+    color: #777;
+}
+
+.subscribe-btn {
+    background-color: #6c47ff;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.subscribe-btn:hover {
+    background-color: #5733e5;
+}
+
+/* Feature List */
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.plan ul li {
+    font-size: 14px;
+    color: #555;
+    padding: 5px 0;
+}
+
+
+
+.badge {
+    background-color: #6c47ff;
+    color: #fff;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 15px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
