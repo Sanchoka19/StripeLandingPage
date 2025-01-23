@@ -4,6 +4,7 @@
 @import url("./mainContainer.css");
 @import url("./globe.css");
 @import url("./slider.css");
+@import url("./startap.css");
 
 @font-face {
     font-family: inter;
@@ -27,7 +28,7 @@ a {
     cursor: pointer;
 }
 
-.body {
+body {
     overflow: auto;
     /* Allows scrolling */
     overflow-x: hidden;

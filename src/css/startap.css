@@ -1,0 +1,167 @@
+.startup-container {
+    display: flex;
+    justify-content: center;
+}
+
+.startup-container-wrapper {
+    max-width: 1080px;
+    border-left: 2px dashed rgba(128, 128, 128, 0.377);
+    border-right: 2px dashed rgba(128, 128, 128, 0.377);
+}
+
+.startup-container span {
+    display: block;
+    color: #635bff;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.startup-container h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #0a2540;
+}
+
+.startup-container p {
+    margin-bottom: 20px;
+    line-height: 28px;
+    color: #425466;
+    font-size: 16px;
+}
+
+.startap-grid {
+    display: grid;
+    grid-template-areas:
+        ". . . item1 item1 item1"
+        ". . . item1 item1 item1"
+        "item2 item2 item2 item1 item1 item1"
+        "item2 item2 item2 item1 item1 item1"
+        "item2 item2 item2 item3 item3 item3"
+        "item2 item2 item2 item3 item3 item3"
+        "item4 item4 item4 item3 item3 item3"
+        "item4 item4 item4 item3 item3 item3"
+        "item4 item4 item4 . . ."
+        "item4 item4 item4 . . .";
+    gap: 32px;
+    justify-content: center;
+}
+
+
+
+.startap-card:nth-child(1) {
+    background: white;
+    border: 1px solid #e0e6ed;
+    border-radius: 8px;
+    grid-area: item1;
+    width: 508px;
+}
+
+.startap-card:nth-child(2) {
+    width: 508px;
+    border: 1px solid #e0e6ed;
+    border-radius: 8px;
+    grid-area: item2;
+}
+
+.startap-card:nth-child(3) {
+    width: 508px;
+    border: 1px solid #e0e6ed;
+    border-radius: 8px;
+    grid-area: item3;
+}
+
+.startap-card:nth-child(4) {
+    width: 508px;
+    border: 1px solid #e0e6ed;
+    border-radius: 8px;
+    grid-area: item4;
+}
+
+.startap-card {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.startap-icon {
+    padding: 5px;
+}
+
+.startap-card .startap-icon img {
+    width: 462px;
+    height: 333px;
+    border-radius: 4px;
+}
+
+.startap-card .company {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.startap-card .company img {
+    width: 109px;
+    height: 40px;
+}
+
+.startap-card .company h2 {
+    font-size: 24px;
+    color: #0a2540;
+}
+
+
+.startap-card .company p {
+    color: #425466;
+    font-size: 16px;
+}
+
+/* 
+.startap-card img{
+    width:500px;
+    height: 333px;
+    padding: 4px 4px 0 4px;
+} */
+
+/* 
+
+.startap-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+/* 
+
+
+
+.startap-card h4 {
+    color: #635bff;
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.startap-card h4 .arrow-right {
+    font-size: 1.2em;
+    transition: transform 0.2s ease;
+}
+
+.startap-card h4:hover .arrow-right {
+    transform: translateX(5px);
+}
+
+
+.startap-icon {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+*/
