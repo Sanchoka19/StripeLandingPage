@@ -40,3 +40,31 @@ const changeSection = (activeIconId) => {
 icons.forEach((iconId) => {
     document.getElementById(iconId).addEventListener("click", () => changeSection(iconId));
 });
+
+
+const editor = document.getElementById("editor");
+const output = document.getElementById("output");
+const lineNumbers = document.getElementById("line-numbers");
+
+editor.addEventListener("input", () => {
+    output.contentDocument.open();
+    output.contentDocument.write(`
+                <style>
+                    body { background: var(--output-bg); color: #fff; font-family: inter; padding: 10px; }
+                </style>
+                ` + editor.value);
+    output.contentDocument.close();
+    updateLineNumbers();
+});
+
+editor.addEventListener("scroll", () => {
+    lineNumbers.scrollTop = editor.scrollTop;
+});
+
+function updateLineNumbers() {
+    const lines = editor.value.split("\n").length;
+    lineNumbers.innerHTML = Array.from({ length: lines }, (_, i) => i + 1).join("<br>");
+}
+
+editor.addEventListener("keyup", updateLineNumbers);
+editor.addEventListener("keydown", updateLineNumbers);

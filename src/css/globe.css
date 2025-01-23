@@ -32,15 +32,22 @@
     margin: 287px 0 128px 0;
 }
 
-iframe {
+.globe-container iframe {
     height: 150%;
     border: none;
     width: 100vw;
     position: absolute;
     left: 641px;
     bottom: -375px;
-    animation: roundAbout 700s ease infinite;
+    /* animation: roundAbout 700s ease infinite; */
     scrollbar-width: 0;
+    overflow: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer 10+ */
+}
+
+.globe-container iframe::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
 }
 
 @keyframes roundAbout {
