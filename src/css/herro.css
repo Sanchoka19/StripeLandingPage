@@ -72,6 +72,8 @@ header nav ul li:hover {
     align-items: center;
     position: relative;
     font-size: 13.95px;
+    width: 240px;
+    justify-content: flex-end;
 }
 
 .contact-sales a {
@@ -104,10 +106,6 @@ header nav ul li:hover {
     position: relative;
 }
 
-.contact-sales button:hover {
-    background-color: rgba(0, 0, 0, 0.26);
-}
-
 .contact-sales button img {
     transition: 0.3s ease-in-out;
 }
@@ -117,8 +115,13 @@ header nav ul li:hover {
 }
 
 /* Universal Button */
-.universal-button {
+.contact-sales .universal-button {
     position: relative;
+    width: 194px;
+}
+
+.contact-sales button:hover {
+    background-color: rgba(0, 0, 0, 0.26);
 }
 
 /* Polygon Background */
@@ -127,12 +130,12 @@ header nav ul li:hover {
     width: 100vw;
     background: hsla(266, 77%, 68%, 1);
     background-image: radial-gradient(at 42% 0%, hsla(40, 100%, 67%, 0) 0px, transparent 50%),
-                      radial-gradient(at 47% 4%, hsla(198, 100%, 76%, 0) 0px, transparent 50%),
-                      radial-gradient(at 20% 32%, hsla(356, 100%, 59%, 0) 0px, transparent 50%),
-                      radial-gradient(at 85% 48%, hsla(266, 77%, 68%, 0) 0px, transparent 50%),
-                      radial-gradient(at 77% 44%, hsla(356, 100%, 59%, 1) 0px, transparent 50%),
-                      radial-gradient(at 80% 100%, hsla(198, 100%, 76%, 1) 0px, transparent 50%),
-                      radial-gradient(at 0% 0%, hsla(40, 100%, 67%, 1) 0px, transparent 50%);
+        radial-gradient(at 47% 4%, hsla(198, 100%, 76%, 0) 0px, transparent 50%),
+        radial-gradient(at 20% 32%, hsla(356, 100%, 59%, 0) 0px, transparent 50%),
+        radial-gradient(at 85% 48%, hsla(266, 77%, 68%, 0) 0px, transparent 50%),
+        radial-gradient(at 77% 44%, hsla(356, 100%, 59%, 1) 0px, transparent 50%),
+        radial-gradient(at 80% 100%, hsla(198, 100%, 76%, 1) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(40, 100%, 67%, 1) 0px, transparent 50%);
     position: absolute;
     background-size: 200% 200%;
     animation: wave-animation 15s ease-in-out infinite;
@@ -141,11 +144,25 @@ header nav ul li:hover {
 }
 
 @keyframes wave-animation {
-    0% { background-position: 0% 0%; }
-    25% { background-position: 25% 50%; }
-    50% { background-position: 75% 100%; }
-    75% { background-position: 75% 50%; }
-    100% { background-position: 0% 0%; }
+    0% {
+        background-position: 0% 0%;
+    }
+
+    25% {
+        background-position: 25% 50%;
+    }
+
+    50% {
+        background-position: 75% 100%;
+    }
+
+    75% {
+        background-position: 75% 50%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
 }
 
 /* Financial Section */
@@ -197,7 +214,8 @@ header nav ul li:hover {
 }
 
 /* Absolute Positioned Images */
-.chart-images, .phone-img {
+.chart-images,
+.phone-img {
     position: absolute;
     z-index: 8;
 }
