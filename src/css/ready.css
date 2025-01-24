@@ -99,7 +99,7 @@
     width: 104%;
     bottom: 69px;
     z-index: 10;
-    rotate: -8deg;
+    rotate: -6deg;
     display: flex;
     justify-content: space-between;
 }
@@ -127,7 +127,7 @@
     background: #7feaffbc;
 }
 
-.right-rectangle{
+.right-rectangle {
     position: absolute;
     width: 490.19px;
     height: 80px;

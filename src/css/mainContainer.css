@@ -562,7 +562,7 @@
     font-weight: 700;
     line-height: 48px;
     color: #0A2540;
-
+    width: 350px;
 }
 
 .main-container-payment-heder p {
@@ -570,6 +570,7 @@
     font-weight: 700;
     line-height: 28px;
     color: #425466;
+    width: 300px;
 }
 
 .main-container-payment-heder button {

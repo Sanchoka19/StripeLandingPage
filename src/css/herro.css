@@ -1,10 +1,10 @@
+/* Main Hero Container */
 .hero-container {
     display: flex;
     justify-content: center;
-    overflow: hidden ;
+    overflow: hidden;
     height: 840px;
 }
-
 
 .hero-container-wrapper {
     width: 1080px;
@@ -16,6 +16,7 @@
     border-right: 2px dashed rgba(128, 128, 128, 0.377);
 }
 
+/* Header */
 header {
     font-family: sans-serif;
     display: flex;
@@ -32,7 +33,7 @@ header {
 header nav {
     display: flex;
     align-items: center;
-    color: rgba(255, 255, 255, 1);
+    color: #fff;
 }
 
 .company-name {
@@ -51,13 +52,14 @@ header nav ul {
 }
 
 header nav ul li {
-    transition: .3s ease;
+    transition: 0.3s ease;
 }
 
 header nav ul li:hover {
     color: rgba(0, 0, 0, 0.281);
 }
 
+/* Contact Sales */
 .contact-sales {
     display: flex;
     align-items: center;
@@ -94,8 +96,8 @@ header nav ul li:hover {
     gap: 4.8px;
     width: 96.22px;
     height: 33px;
-    background-color: rgba(255, 255, 255, 1);
-    color: rgba(225, 133, 56, 1);
+    background-color: #fff;
+    color: #e18538;
     border: none;
     border-radius: 16.5px;
     font-size: 13.83px;
@@ -114,52 +116,39 @@ header nav ul li:hover {
     transform: translateX(4px);
 }
 
+/* Universal Button */
 .universal-button {
     position: relative;
 }
 
+/* Polygon Background */
 .polygon {
     height: 580px;
     width: 100vw;
     background: hsla(266, 77%, 68%, 1);
-    background-image:
-        radial-gradient(at 42% 0%, hsla(40, 100%, 67%, 0) 0px, transparent 50%),
-        radial-gradient(at 47% 4%, hsla(198, 100%, 76%, 0) 0px, transparent 50%),
-        radial-gradient(at 20% 32%, hsla(356, 100%, 59%, 0) 0px, transparent 50%),
-        radial-gradient(at 85% 48%, hsla(266, 77%, 68%, 0) 0px, transparent 50%),
-        radial-gradient(at 77% 44%, hsla(356, 100%, 59%, 1) 0px, transparent 50%),
-        radial-gradient(at 80% 100%, hsla(198, 100%, 76%, 1) 0px, transparent 50%),
-        radial-gradient(at 0% 0%, hsla(40, 100%, 67%, 1) 0px, transparent 50%);
+    background-image: radial-gradient(at 42% 0%, hsla(40, 100%, 67%, 0) 0px, transparent 50%),
+                      radial-gradient(at 47% 4%, hsla(198, 100%, 76%, 0) 0px, transparent 50%),
+                      radial-gradient(at 20% 32%, hsla(356, 100%, 59%, 0) 0px, transparent 50%),
+                      radial-gradient(at 85% 48%, hsla(266, 77%, 68%, 0) 0px, transparent 50%),
+                      radial-gradient(at 77% 44%, hsla(356, 100%, 59%, 1) 0px, transparent 50%),
+                      radial-gradient(at 80% 100%, hsla(198, 100%, 76%, 1) 0px, transparent 50%),
+                      radial-gradient(at 0% 0%, hsla(40, 100%, 67%, 1) 0px, transparent 50%);
     position: absolute;
     background-size: 200% 200%;
     animation: wave-animation 15s ease-in-out infinite;
     clip-path: polygon(0% 0%, 0% 100%, 165% 0%);
     z-index: 5;
-    mix-blend-mode: difference;
 }
 
 @keyframes wave-animation {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    25% {
-        background-position: 25% 50%;
-    }
-
-    50% {
-        background-position: 75% 100%;
-    }
-
-    75% {
-        background-position: 75% 50%;
-    }
-
-    100% {
-        background-position: 0% 0%;
-    }
+    0% { background-position: 0% 0%; }
+    25% { background-position: 25% 50%; }
+    50% { background-position: 75% 100%; }
+    75% { background-position: 75% 50%; }
+    100% { background-position: 0% 0%; }
 }
 
+/* Financial Section */
 .financial {
     z-index: 10;
     margin-top: 165px;
@@ -167,7 +156,6 @@ header nav ul li:hover {
     display: flex;
     flex-direction: column;
     gap: 32px;
-
     padding: 10px 0 10px 10px;
 }
 
@@ -180,17 +168,12 @@ header nav ul li:hover {
     background-color: rgba(0, 0, 0, 0.407);
     color: #fff;
     padding: 5px 10px;
-
     border-radius: 30px;
-}
-
-.session {
-    font-weight: 1000;
 }
 
 .financial h3 img {
     margin-left: 5px;
-    transition: .3s ease;
+    transition: 0.3s ease;
 }
 
 .financial h3:hover img {
@@ -213,20 +196,23 @@ header nav ul li:hover {
     line-height: 28px;
 }
 
-.chart-images {
+/* Absolute Positioned Images */
+.chart-images, .phone-img {
     position: absolute;
-    top: 140px;
-    right: -420px;
     z-index: 8;
 }
 
-.phone-img {
-    position: absolute;
-    top: 202px;
-    right: 60px;
-    z-index: 999;
+.chart-images {
+    top: 140px;
+    right: -420px;
 }
 
+.phone-img {
+    top: 202px;
+    right: 60px;
+}
+
+/* Contact Sales Button Section */
 .contact-sales-wrapper {
     display: flex;
     align-items: center;
@@ -234,20 +220,21 @@ header nav ul li:hover {
 }
 
 .contact-btn {
-    background-color: rgba(10, 37, 64, 1);
-    padding: 0 0 0 16px;
+    background-color: #0a2540;
+    padding-left: 16px;
     display: flex;
     align-items: center;
     border-radius: 15.5px;
     width: 111px;
     height: 33px;
     position: relative;
+    transition: 0.3s ease;
 }
 
 .contact-btn button {
     background-color: transparent;
     border: none;
-    color: rgba(255, 255, 255, 1);
+    color: #fff;
     font-size: 13px;
     line-height: 24px;
     font-weight: 500;
@@ -257,11 +244,7 @@ header nav ul li:hover {
     position: absolute;
     top: 13px;
     right: 17px;
-    transition: .3s ease;
-}
-
-.contact-btn {
-    transition: .3s ease;
+    transition: 0.3s ease;
 }
 
 .contact-btn:hover {
@@ -272,6 +255,7 @@ header nav ul li:hover {
     transform: translateX(5px);
 }
 
+/* Sales Contact Section */
 .contact-sales-btn {
     display: flex;
     align-items: center;
@@ -279,7 +263,7 @@ header nav ul li:hover {
 }
 
 .contact-sales-btn h4 {
-    color: rgba(10, 37, 64, 1);
+    color: #0a2540;
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
@@ -290,9 +274,3 @@ header nav ul li:hover {
     top: 7px;
     right: -12px;
 }
-
-/* @media screen and (max-width: 1080px) {
-    .contact-btn button {
-        font-size: 44px;
-    }
-} */

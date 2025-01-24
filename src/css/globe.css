@@ -1,10 +1,8 @@
 .globe-container {
     position: relative;
     clip-path: polygon(0% 26%, 0% 228%, 178% 0%);
-    /* background: linear-gradient(to top, #19303a, #243d45, #305363);  stripe */
     background: #000011;
     height: 911px;
-    overflow: hidden;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -13,8 +11,6 @@
 }
 
 .globe-content {
-    /* border-left: 2px dashed rgba(128, 128, 128, 0.377);
-    border-right: 2px dashed rgba(128, 128, 128, 0.377); */
     position: relative;
     margin-left: 420px;
     width: 1080px;
@@ -29,46 +25,35 @@
     flex-direction: column;
     z-index: 5;
     width: 100%;
-    margin: 287px 0 128px 0;
+    margin: 287px 0 128px;
 }
 
 .globe-container iframe {
     height: 150%;
-    border: none;
     width: 100vw;
     position: absolute;
     left: 641px;
     bottom: -375px;
-    /* animation: roundAbout 700s ease infinite; */
-    scrollbar-width: 0;
-    overflow: hidden;
-    scrollbar-width: none; /* For Firefox */
-    -ms-overflow-style: none; /* For Internet Explorer 10+ */
+    border: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .globe-container iframe::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari, and Edge */
+    display: none;
 }
 
 @keyframes roundAbout {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    50% {
-        transform: rotate(360deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
 }
 
 .global-comrce-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 0 0 16px;
+    padding-left: 16px;
 }
 
 .global-comrce-content h6 {
@@ -80,7 +65,7 @@
 .global-comrce-content h2 {
     font-size: 36px;
     line-height: 48px;
-    color: rgba(255, 255, 255, 1);
+    color: #fff;
     font-weight: 500;
     width: 300px;
 }
@@ -107,7 +92,7 @@
 
 .global-comrce-footer h4 {
     border-left: 1px solid rgba(0, 212, 255, 1);
-    padding: 0 0 0 16px;
+    padding-left: 16px;
     transition: .3s ease;
     line-height: 32px;
     font-size: 23.44px;
@@ -118,7 +103,7 @@
 }
 
 .global-comrce-footer p {
-    padding: 0 0 0 16px;
+    padding-left: 16px;
     line-height: 24px;
     font-size: 13.71px;
 }
