@@ -1,6 +1,6 @@
 .globe-container {
     position: relative;
-    clip-path: polygon(0% 26%, 0% 228%, 178% 0%);
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
     background: #000011;
     height: 911px;
     width: 100vw;
@@ -41,12 +41,6 @@
 
 .globe-container iframe::-webkit-scrollbar {
     display: none;
-}
-
-@keyframes roundAbout {
-    0% { transform: rotate(0deg); }
-    50% { transform: rotate(360deg); }
-    100% { transform: rotate(0deg); }
 }
 
 .global-comrce-content {

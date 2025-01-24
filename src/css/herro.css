@@ -126,43 +126,14 @@ header nav ul li:hover {
 
 /* Polygon Background */
 .polygon {
-    height: 580px;
+    height: 630px;
     width: 100vw;
     background: hsla(266, 77%, 68%, 1);
-    background-image: radial-gradient(at 42% 0%, hsla(40, 100%, 67%, 0) 0px, transparent 50%),
-        radial-gradient(at 47% 4%, hsla(198, 100%, 76%, 0) 0px, transparent 50%),
-        radial-gradient(at 20% 32%, hsla(356, 100%, 59%, 0) 0px, transparent 50%),
-        radial-gradient(at 85% 48%, hsla(266, 77%, 68%, 0) 0px, transparent 50%),
-        radial-gradient(at 77% 44%, hsla(356, 100%, 59%, 1) 0px, transparent 50%),
-        radial-gradient(at 80% 100%, hsla(198, 100%, 76%, 1) 0px, transparent 50%),
-        radial-gradient(at 0% 0%, hsla(40, 100%, 67%, 1) 0px, transparent 50%);
     position: absolute;
     background-size: 200% 200%;
-    animation: wave-animation 15s ease-in-out infinite;
-    clip-path: polygon(0% 0%, 0% 100%, 165% 0%);
+    clip-path: polygon(0% 0%, 0% 99%, 200% 0%);
     z-index: 5;
-}
-
-@keyframes wave-animation {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    25% {
-        background-position: 25% 50%;
-    }
-
-    50% {
-        background-position: 75% 100%;
-    }
-
-    75% {
-        background-position: 75% 50%;
-    }
-
-    100% {
-        background-position: 0% 0%;
-    }
+    top: -70px;
 }
 
 /* Financial Section */
