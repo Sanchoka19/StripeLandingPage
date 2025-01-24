@@ -26,7 +26,7 @@ footer {
     position: relative;
 }
 
-.text{
+.text {
     position: absolute;
     top: 37px;
     left: 30px;
@@ -85,12 +85,10 @@ footer {
     margin-top: 20px;
     color: #364657;
     font-size: 13.71px;
-
 }
 
 .united-icon {
     position: relative;
-
 }
 
 .united-icon img {

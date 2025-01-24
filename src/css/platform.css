@@ -1,7 +1,7 @@
 .platform-container {
     display: flex;
     justify-content: center;
-    padding: 287px 0 128px 0;
+    padding: 287px 0 128px;
 }
 
 .platform-wrapper {
@@ -40,7 +40,7 @@
     line-height: 1.3;
     font-weight: 700;
     color: #1a1a1a;
-    margin: 0 0 15px;
+    margin-bottom: 15px;
 }
 
 /* Description */
@@ -51,8 +51,7 @@
     margin: 0;
 }
 
-
-/*  platform container */
+/* Platform Cards */
 .platform-cards {
     display: flex;
     gap: 16px;
@@ -76,9 +75,8 @@
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* Card Content */
 .platform-card-content {
-    /* width: 338px;
-    height: 528px; */
     display: flex;
     flex-direction: column;
     border-radius: 8px;
@@ -87,9 +85,8 @@
 .platform-card-content-wrapper {
     display: flex;
     flex-direction: column;
-    margin: 24px 24px 84px 24px;
+    margin: 24px;
 }
-
 
 .platform-card-content-wrapper h3 {
     font-size: 24px;
@@ -104,26 +101,25 @@
     font-weight: 500;
 }
 
-.platform-card-content-wrapper-link{
-color: #635BFF;
-}
-.platform-card-content-wrapper img {
-    padding: 4px 4px 0 4px;
+.platform-card-content-wrapper-link {
+    color: #635BFF;
 }
 
+.platform-card-content-wrapper img {
+    padding: 4px 4px 0;
+}
+
+/* Icons */
 .platform-card-icons {
     display: flex;
-    padding: 4px 4px 0 4px;
+    padding: 4px 4px 0;
 }
-
 
 .platform-card-icons img {
     width: 330.66px;
-    /* height: 220px; */
 }
 
-
-/* Hidden text */
+/* Hidden Text */
 .see-hidden-text {
     font-size: 14px;
     color: #007bff;
@@ -133,16 +129,17 @@ color: #635BFF;
     transform: translateY(10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
- .see-hidden-text p {
+
+.see-hidden-text p {
     color: #425466;
- }
+}
 
 .platform-card:hover .see-hidden-text {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* See directory link styling */
+/* Directory Link */
 .see-hidden-link {
     text-decoration: none;
     color: #007bff;
@@ -151,20 +148,13 @@ color: #635BFF;
     align-items: center;
 }
 
-
-
 .see-hidden-link .arrow {
     font-size: 16px;
     margin-left: 5px;
-    transition: transform 0.3s ease, content 0.3s ease;
+    transition: transform 0.3s ease;
     cursor: pointer;
 }
 
-
 .see-hidden-link .arrow:hover {
-    content: '/2192';
-    /* Unicode for → */
     transform: translateX(2px);
-    /* Adds a slight motion effect */
 }
-
