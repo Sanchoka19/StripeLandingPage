@@ -1,0 +1,170 @@
+.platform-container {
+    display: flex;
+    justify-content: center;
+    padding: 287px 0 128px 0;
+}
+
+.platform-wrapper {
+    width: 1080px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    border-left: 2px dashed rgba(128, 128, 128, 0.377);
+    border-right: 2px dashed rgba(128, 128, 128, 0.377);
+    padding: 0 16px;
+}
+
+.ease-container {
+    width: 600px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Link Styles */
+.launch-with-ease {
+    font-size: 14px;
+    font-weight: 600;
+    color: #635bff;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.header-link:hover {
+    text-decoration: underline;
+}
+
+.no-code {
+    font-size: 32px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 15px;
+}
+
+/* Description */
+.developers-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #6b7280;
+    margin: 0;
+}
+
+
+/*  platform container */
+
+
+.platform-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    gap: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.platform-cards {
+    display: flex;
+    gap: 16px;
+}
+
+.platform-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.platform-card-content {
+    /* width: 338px;
+    height: 528px; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.platform-card-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 24px 84px 24px;
+}
+
+
+.platform-card-content-wrapper h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #0A2540;
+}
+
+.platform-card-content-wrapper p {
+    font-size: 16px;
+    color: #425466;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.platform-card-content-wrapper-link{
+color: #635BFF;
+}
+.platform-card-content-wrapper img {
+    padding: 4px 4px 0 4px;
+}
+
+.platform-card-icons {
+    display: flex;
+    padding: 4px 4px 0 4px;
+}
+
+
+.platform-card-icons img {
+    width: 330.66px;
+    /* height: 220px; */
+}
+
+
+/* Hidden text */
+.see-hidden-text {
+    font-size: 14px;
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 15px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+ .see-hidden-text p {
+    color: #425466;
+ }
+
+.platform-card:hover .see-hidden-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* See directory link styling */
+.see-hidden-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+
+.see-hidden-link .arrow {
+    font-size: 16px;
+    margin-left: 5px;
+    transition: transform 0.3s ease, content 0.3s ease;
+    cursor: pointer;
+}
+
+
+.see-hidden-link .arrow:hover {
+    content: '/2192';
+    /* Unicode for → */
+    transform: translateX(2px);
+    /* Adds a slight motion effect */
+}
