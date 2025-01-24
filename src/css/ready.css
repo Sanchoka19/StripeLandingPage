@@ -1,0 +1,156 @@
+.ready-conteiner {
+    display: flex;
+    justify-content: center;
+    padding: 128px 0 287px 0;
+    background: #f6f9fc;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.ready-conteiner-wrapper {
+    width: 1080px;
+    display: flex;
+    gap: 112px;
+    height: 241px;
+    border-left: 2px dashed rgba(128, 128, 128, 0.377);
+    border-right: 2px dashed rgba(128, 128, 128, 0.377);
+}
+
+.ready-conteiner-explore {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 0 112px 16px 16px;
+}
+
+.ready-conteiner-explore h3 {
+    color: #0A2540;
+}
+
+.ready-conteiner-explore p {
+    width: 412px;
+    color: #425466;
+}
+
+.ready-conteiner-explore p a {
+    color: #635BFF;
+    text-decoration: none;
+}
+
+.ready-conteiner-button {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.ready-conteiner-button span {
+    color: #635BFF;
+}
+
+.ready-conteiner-button button {
+    background-color: #635BFF;
+    border-radius: 16px;
+    padding: 3px 26px 6px 16px;
+    border: 2px;
+    color: #FFF;
+}
+
+.ready-conteiner-card-wrapper {
+    width: 540px;
+    height: 177px;
+    display: flex;
+}
+
+.ready-conteiner-pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 0 0 16px;
+    font-size: 13px;
+}
+
+.ready-conteiner-pricing-img {
+    height: 40px;
+
+}
+
+.ready-conteiner-pricing span {
+    display: flex;
+    gap: 5px;
+    color: #635BFF;
+}
+
+.ready-conteiner-pricing h4 {
+    color: #0A2540;
+    border-left: #635BFF;
+}
+
+.ready-conteiner-pricing p {
+    width: 187px;
+    color: #425466;
+    line-height: 24px;
+}
+
+.rectagle {
+    position: absolute;
+    height: 72px;
+    width: 104%;
+    bottom: 69px;
+    z-index: 10;
+    rotate: -8deg;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-rectangle {
+    position: relative;
+    height: 90px;
+}
+
+.left-rectangle .left-rectangle-purple {
+    width: 490.19px;
+    background-color: #7a73fe92;
+    height: 40px;
+    z-index: 1000;
+    position: absolute;
+}
+
+.left-rectangle-blue {
+    position: absolute;
+    top: -31px;
+    left: 271px;
+    z-index: 22;
+    width: 160.88px;
+    height: 40px;
+    background: #7feaffbc;
+}
+
+.right-rectangle{
+    position: absolute;
+    width: 490.19px;
+    height: 80px;
+    z-index: 200;
+    right: 0;
+}
+
+
+.right-rectangle-purple {
+    background: #7a73fe92;
+    position: absolute;
+    height: 40px;
+    z-index: 201;
+    width: 160.88px;
+    right: 247px;
+}
+
+.right-rectangle-blue {
+    background: #7feaffbc;
+    position: absolute;
+    width: 490.19px;
+    height: 40px;
+    z-index: 200;
+    top: -32px;
+    left: 30px;
+}
