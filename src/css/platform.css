@@ -53,7 +53,10 @@
 
 
 /*  platform container */
-
+.platform-cards {
+    display: flex;
+    gap: 16px;
+}
 
 .platform-card {
     background: #fff;
@@ -65,11 +68,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-}
-
-.platform-cards {
-    display: flex;
-    gap: 16px;
+    height: 528px;
 }
 
 .platform-card:hover {
@@ -168,3 +167,4 @@ color: #635BFF;
     transform: translateX(2px);
     /* Adds a slight motion effect */
 }
+

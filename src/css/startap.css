@@ -7,6 +7,7 @@
     max-width: 1080px;
     border-left: 2px dashed rgba(128, 128, 128, 0.377);
     border-right: 2px dashed rgba(128, 128, 128, 0.377);
+    padding: 14px;
 }
 
 .startup-container span {
@@ -116,53 +117,45 @@
 .startap-card .company p {
     color: #425466;
     font-size: 16px;
+    width: 400px ;
 }
 
-/* 
-.startap-card img{
-    width:500px;
-    height: 333px;
-    padding: 4px 4px 0 4px;
-} */
 
-/* 
-
+/*  Card Styles */
 .startap-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 
-
-
-/* 
-
-
-
-.startap-card h4 {
-    color: #635bff;
-    font-size: 1em;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
+.company h4 {
+  font-size: 16px;
+  color: #635bff; 
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 5px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.startap-card h4 .arrow-right {
-    font-size: 1.2em;
-    transition: transform 0.2s ease;
-}
-
-.startap-card h4:hover .arrow-right {
-    transform: translateX(5px);
+.startap-card:hover .company h4 {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 
-.startap-icon {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
+.arrow-right {
+  font-size: 16px;
+  transition: transform 0.3s ease, content 0.3s ease;
+  cursor: pointer;
 }
 
-*/
+
+.company h4:hover .arrow-right {
+  content: '\2192'; 
+  transform: translateX(3px); 
+}
+
+
