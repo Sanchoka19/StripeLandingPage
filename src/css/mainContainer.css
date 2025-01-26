@@ -332,7 +332,224 @@
     Height: 345.53px;
 }
 
-/* ///////////////////// */
+/* /////////    mobile Form      //////////// */
+
+.payment-container {
+    background: #fff;
+    border-radius: 45px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 303px;
+    padding: 24px 16px 28px 16px;
+    display: flex;
+    flex-direction: column;
+    color: rgba(10, 37, 64, 1);
+    align-items: center;
+    box-shadow: 0px 5px 50px rgba(10, 37, 64, 0.5);
+    animation: shake .5s ease infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.product-image {
+    width: 72px;
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.1);
+}
+
+
+.product-title {
+    font-size: 10.14px;
+    margin: 15px 0 4px 0;
+}
+
+.product-price {
+    font-size: 12px;
+    margin-bottom: 24px;
+}
+
+.payment-button {
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    background: #0A2540;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.apple-pay {
+    margin: 18px 0 16px 0;
+}
+
+.divider {
+    margin: 16px 0 14px 0;
+    color: #999;
+    font-size: 10px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box input {
+    border-radius: 8px;
+    padding: 10px;
+    transition: 0.2s ease;
+}
+
+.input-field:hover,
+.input-field:focus {
+    border-color: #0A2540;
+    box-shadow: 0 0 5px rgba(10, 37, 64, 0.5);
+    outline: none;
+}
+
+.input-box:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box:nth-child(2) div:nth-child(2) {
+    display: flex;
+}
+
+.input-box:nth-child(2) div:nth-child(1) input {
+    border-radius: 8px 8px 0 0;
+}
+
+.input-box:nth-child(2) div:nth-child(1) {
+    position: relative;
+}
+
+.input-box:nth-child(2) div:nth-child(2) {
+    position: relative;
+}
+
+.input-box:nth-child(2) div:nth-child(2) input:nth-child(1) {
+    border-radius: 0 0 0 8px;
+}
+
+.input-box:nth-child(2) div:nth-child(2) input:nth-child(2) {
+    border-radius: 0 0 8px 0;
+}
+
+.input-box:nth-child(3) .input-field:nth-child(2) {
+    border-radius: 8px 8px 0 0;
+}
+
+.input-box:nth-child(3) .input-field:nth-child(3) {
+    border-radius: 0 0 8px 8px;
+}
+
+.input-box label {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: start;
+    color: rgba(66, 84, 102, 1);
+    font-size: 10px;
+    transition: 0.4s ease;
+}
+
+.input-box label:hover {
+    color: #0A2540;
+    font-weight: bold;
+}
+
+.input-field::placeholder:hover {
+    color: rgba(10, 37, 64, 0.7);
+}
+
+
+.input-field {
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.visa-ph {
+    position: absolute;
+    top: 27px;
+    right: 5px;
+    width: 29px;
+    height: 18px;
+}
+
+.visa-p {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.trans {
+    position: absolute;
+    right: 8px;
+    top: 4px;
+}
+
+.pay-button {
+    background: #0A2540;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 95px;
+    font-size: 11px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.input-box input::placeholder {
+    font-size: 10px;
+}
+
+.payment-button {
+    transition: all 0.3s ease;
+}
+
+.payment-button:hover {
+    background: #082136;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.pay-button:hover {
+    background: #082136;
+    /* Darker shade for the pay button */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+/* //////////////////////// */
 
 .main-container-content:nth-child(4) .main-container-item:nth-child(2) {
     display: flex;
@@ -1010,9 +1227,13 @@
 
 
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1440px) {
     .main-container-wrapper {
         width: 992px;
+    }
+
+    .main-container-connect-heder p {
+        width: 450px;
     }
 }
 
@@ -1028,115 +1249,3 @@
         border-left: none;
     }
 }
-
-
-/* mobile */
-
-.payment-container {
-    background: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 303px;
-    padding: 8px;
-    text-align: center;
-  }
-  
-  .issuing--image {
-    width: 100px;
-    height: auto;
-    margin: 0 auto 16px;
-    border-radius: 8px;
-  }
-  
-  .product-title {
-    font-size: 18px;
-    color: #333333;
-    margin: 8px 0;
-  }
-  
-  .product-price {
-    font-size: 24px;
-    color: #4a4a4a;
-    margin-bottom: 24px;
-  }
-  
-  .payment-button {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 12px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .apple-pay {
-    background: #0A2540;
-    color: white;
-  }
-  
-  .link-pay {
-    background: #0A2540;
-    color: white;
-  }
-  
-  .divider {
-    margin: 24px 0;
-    position: relative;
-    text-align: center;
-    color: #999;
-    font-size: 14px;
-  }
-  
-  .divider:before,
-  .divider:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 40%;
-    height: 1px;
-    background: #ddd;
-  }
-  
-  .divider:before {
-    left: 0;
-  }
-  
-  .divider:after {
-    right: 0;
-  }
-  
-  .input-field {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 16px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 14px;
-  }
-  
-  .pay-button {
-    background: #0A2540;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 12px;
-    font-size: 16px;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  
-  .input-box .details{
-     display: flex;
-     align-items: start;
-  }
-  
-  .visa-ph{
-    position: relative;
-    top: -42px;
-    left: 113px;
-    width: 29px;
-    height: 18px;
-  }

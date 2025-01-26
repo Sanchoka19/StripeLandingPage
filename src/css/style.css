@@ -31,6 +31,10 @@ a {
     cursor: pointer;
 }
 
+button {
+    border: none;
+}
+
 body {
     overflow: auto;
     overflow-x: hidden;
@@ -46,7 +50,6 @@ body {
     /* Firefox */
 }
 
-
 ul {
     list-style: none;
 }
@@ -57,4 +60,8 @@ a {
 
 li {
     transition: .2s ease;
+}
+
+input {
+    outline: none;
 }

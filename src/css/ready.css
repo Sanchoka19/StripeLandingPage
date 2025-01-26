@@ -155,8 +155,18 @@
     left: 30px;
 }
 
+@media screen and (max-width: 1440px){
+    .rectagle {
+        rotate: -8deg;
+    }
+}
+
 @media screen and (max-width: 1080px) {
     .ready-conteiner-wrapper {
         width: 992px;
+    }
+
+    .rectagle {
+        rotate: -11deg;
     }
 }
