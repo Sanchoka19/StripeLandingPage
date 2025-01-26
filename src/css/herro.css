@@ -4,6 +4,7 @@
     justify-content: center;
     overflow: hidden;
     height: 840px;
+    width: 100vw;
 }
 
 .hero-container-wrapper {
@@ -20,14 +21,22 @@
 header {
     font-family: sans-serif;
     display: flex;
-    justify-content: space-between;
-    gap: 245px;
     align-items: center;
     padding: 12px 16px 12px 12px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     z-index: 7;
+    width: 1080px;
+    justify-content: space-between;
+}
+
+.header-company-holder {
+    display: flex;
+}
+
+.hero-container-wrapper header span {
+    color: rgba(255, 255, 255, 1);
 }
 
 header nav {
@@ -39,7 +48,6 @@ header nav {
 .company-name {
     font-weight: 1000;
     font-size: 1.5rem;
-    margin: 5.5px 0;
 }
 
 header nav ul {
@@ -51,11 +59,12 @@ header nav ul {
     font-weight: 500;
 }
 
-header nav ul li {
+header nav ul li a {
     transition: 0.3s ease;
+    color: rgba(255, 255, 255, 1);
 }
 
-header nav ul li:hover {
+header nav ul a:hover {
     color: rgba(0, 0, 0, 0.281);
 }
 
@@ -64,7 +73,7 @@ header nav ul li:hover {
     display: flex;
     align-items: center;
     gap: 30px;
-    width: 215px;
+    justify-content: flex-end;
 }
 
 .contact-sales-holder {
@@ -72,7 +81,7 @@ header nav ul li:hover {
     align-items: center;
     position: relative;
     font-size: 13.95px;
-    width: 240px;
+    width: 90px;
     justify-content: flex-end;
 }
 
@@ -93,10 +102,8 @@ header nav ul li:hover {
 
 .contact-sales button {
     padding: 7px 23px 6px 16px;
-    display: inline-flex;
     align-items: center;
     gap: 4.8px;
-    width: 96.22px;
     height: 33px;
     background-color: #fff;
     color: #e18538;
@@ -104,6 +111,7 @@ header nav ul li:hover {
     border-radius: 16.5px;
     font-size: 13.83px;
     position: relative;
+    width: 100px;
 }
 
 .contact-sales button img {
@@ -114,33 +122,28 @@ header nav ul li:hover {
     transform: translateX(4px);
 }
 
-/* Universal Button */
-.contact-sales .universal-button {
-    position: relative;
-    width: 194px;
-}
-
 .contact-sales button:hover {
     background-color: rgba(0, 0, 0, 0.26);
 }
 
 /* Polygon Background */
 .polygon {
-    height: 630px;
+    height: 650px;
     width: 100vw;
     background: hsla(266, 77%, 68%, 1);
     position: absolute;
     background-size: 200% 200%;
-    clip-path: polygon(0% 0%, 0% 99%, 200% 0%);
+    clip-path: polygon(0% 0%, 0% 100%, 210% 0%);
     z-index: 5;
     top: -70px;
+    overflow: hidden;
 }
 
 /* Financial Section */
 .financial {
     z-index: 10;
     margin-top: 165px;
-    width: 1080px;
+    width: 992px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -170,7 +173,7 @@ header nav ul li:hover {
 
 .financial h2 {
     color: black;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 83px;
     max-width: 560px;
     width: 100%;
@@ -184,21 +187,27 @@ header nav ul li:hover {
     line-height: 28px;
 }
 
+.chart-container {
+    position: relative;
+    top: -567px;
+    left: 176px;
+}
+
 /* Absolute Positioned Images */
 .chart-images,
 .phone-img {
     position: absolute;
     z-index: 8;
+    overflow: hidden;
 }
 
-.chart-images {
-    top: 140px;
-    right: -420px;
-}
+.chart-images {}
 
 .phone-img {
-    top: 202px;
-    right: 60px;
+    top: 100px;
+    left: -20px;
+    box-shadow: -1px 13px 11px #00000029;
+    border-radius: 28px;
 }
 
 /* Contact Sales Button Section */
@@ -262,4 +271,26 @@ header nav ul li:hover {
     position: fixed;
     top: 7px;
     right: -12px;
+}
+
+@media screen and (max-width: 1440px) {
+    .polygon {
+        clip-path: polygon(0% 0%, 0% 97%, 210% 0%);
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    header {
+        width: 1024px;
+    }
+
+    .hero-container-wrapper {
+        width: 992px;
+    }
+
+    .polygon {
+        clip-path: polygon(0% 0%, 0% 90%, 292% 0%);
+    }
+
+ 
 }

@@ -6,6 +6,7 @@
     color: #fff;
     display: flex;
     justify-content: center;
+    overflow: hidden;
     padding: 287px 0;
 }
 
@@ -187,9 +188,11 @@
     0% {
         transform: rotate(0deg);
     }
+
     50% {
         transform: rotate(180deg);
     }
+
     100% {
         transform: rotate(0deg);
     }
@@ -205,21 +208,25 @@
         left: 13px;
         opacity: 1;
     }
+
     20% {
         top: 0;
         left: -10px;
         opacity: 0;
     }
+
     40% {
         top: 0;
         left: -10px;
         opacity: 0;
     }
+
     60% {
         top: 0;
         left: -10px;
         opacity: 1;
     }
+
     100% {
         top: 14px;
         left: 13px;
@@ -235,16 +242,27 @@
     0% {
         transform: translateX(0);
     }
+
     25% {
         transform: translateX(-2px);
     }
+
     50% {
         transform: translateX(2px);
     }
+
     75% {
         transform: translateX(-2px);
     }
+
     100% {
         transform: translateX(0);
+    }
+}
+
+
+@media screen and (max-width: 1080px) {
+    .developer-container-wrapper {
+        width: 992px;
     }
 }

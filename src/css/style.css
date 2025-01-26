@@ -33,9 +33,7 @@ a {
 
 body {
     overflow: auto;
-    /* Allows scrolling */
     overflow-x: hidden;
-
 }
 
 body::-webkit-scrollbar {

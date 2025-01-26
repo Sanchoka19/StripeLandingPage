@@ -12,11 +12,11 @@
 
 .globe-content {
     position: relative;
-    margin-left: 420px;
     width: 1080px;
     color: #fff;
     display: flex;
     height: 911px;
+    padding: 0 0 0 16px;
 }
 
 .globe-content-wrapper {
@@ -33,7 +33,7 @@
     width: 100vw;
     position: absolute;
     left: 641px;
-    bottom: -375px;
+    bottom: -290px;
     border: none;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -74,6 +74,7 @@
 
 .globe-footer {
     display: flex;
+    width: 992px;
 }
 
 .global-comrce-footer {
@@ -104,4 +105,13 @@
 
 .strype-serivce {
     color: rgba(0, 212, 255, 1);
+}
+
+@media screen and (max-width: 1080px) {
+    .globe-content-wrapper {
+        width: 992px;
+    }
+    .globe-content {
+        margin-left: 20px;
+    }
 }

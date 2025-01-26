@@ -1,6 +1,7 @@
 footer {
     background-color: #ffffff;
     display: flex;
+    overflow: hidden;
     align-items: center;
 }
 
@@ -95,4 +96,10 @@ footer {
     position: absolute;
     left: 0;
     top: 4px;
+}
+
+@media screen and (max-width: 1080px) {
+    .footer-container {
+        width: 992px;
+    }
 }
