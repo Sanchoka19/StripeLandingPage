@@ -1,5 +1,6 @@
 .platform-container {
     display: flex;
+    overflow: hidden;
     justify-content: center;
     padding: 287px 0 128px;
 }
@@ -157,4 +158,22 @@
 
 .see-hidden-link .arrow:hover {
     transform: translateX(2px);
+}
+
+@media screen and (max-width: 1080px) {
+    .platform-wrapper {
+        width: 992px;
+    }
+
+    .platform-card {
+        width: 301.33px;
+    }
+
+    .platform-cards {
+        flex-wrap: wrap;
+    }
+
+    .platform-card-icons img {
+        width: 290px;
+    }
 }

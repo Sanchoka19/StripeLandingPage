@@ -1,5 +1,6 @@
 .logo {
     height: 250px;
+    overflow: hidden;
     display: flex;
     justify-content: center;
 }
@@ -28,4 +29,11 @@
 .logo-grid img {
     width: 200px;
     height: 40px;
+}
+
+
+@media screen and (max-width: 1080px) {
+    .logo-wrapper {
+        width: 992px;
+    }
 }

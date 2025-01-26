@@ -2,6 +2,7 @@
 .startup-container {
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .startup-container-wrapper {
@@ -62,6 +63,8 @@
     flex-direction: column;
     background: white;
     transition: 1s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .startap-card:nth-child(1) {
@@ -149,4 +152,20 @@
 .company h4:hover .arrow-right {
     content: '\2192';
     transform: translateX(3px);
+}
+
+@media screen and (max-width: 1080px) {
+    .startup-container-wrapper {
+        width: 992px;
+    }
+
+    .startap-card {
+        width: 464px;
+        height: 523px;
+    }
+
+    .startap-card .startap-icon img {
+        width: 500px;
+        height: 220px;
+    }
 }

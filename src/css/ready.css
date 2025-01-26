@@ -154,3 +154,9 @@
     top: -32px;
     left: 30px;
 }
+
+@media screen and (max-width: 1080px) {
+    .ready-conteiner-wrapper {
+        width: 992px;
+    }
+}
