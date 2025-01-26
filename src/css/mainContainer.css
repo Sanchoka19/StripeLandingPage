@@ -1007,3 +1007,136 @@
     color: #0A2540;
     font-size: 18px;
 }
+
+
+
+@media screen and (max-width: 1080px) {
+    .main-container-wrapper {
+        width: 992px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .main-container-content {
+        grid-template-columns: 1fr;
+    }
+
+
+    .main-container-item:nth-child(even) {
+        border-left: none;
+    }
+}
+
+
+/* mobile */
+
+.payment-container {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 303px;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .issuing--image {
+    width: 100px;
+    height: auto;
+    margin: 0 auto 16px;
+    border-radius: 8px;
+  }
+  
+  .product-title {
+    font-size: 18px;
+    color: #333333;
+    margin: 8px 0;
+  }
+  
+  .product-price {
+    font-size: 24px;
+    color: #4a4a4a;
+    margin-bottom: 24px;
+  }
+  
+  .payment-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .apple-pay {
+    background: #0A2540;
+    color: white;
+  }
+  
+  .link-pay {
+    background: #0A2540;
+    color: white;
+  }
+  
+  .divider {
+    margin: 24px 0;
+    position: relative;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+  }
+  
+  .divider:before,
+  .divider:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #ddd;
+  }
+  
+  .divider:before {
+    left: 0;
+  }
+  
+  .divider:after {
+    right: 0;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .pay-button {
+    background: #0A2540;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  
+  .input-box .details{
+     display: flex;
+     align-items: start;
+  }
+  
+  .visa-ph{
+    position: relative;
+    top: -42px;
+    left: 113px;
+    width: 29px;
+    height: 18px;
+  }
