@@ -1,30 +1,45 @@
 .globe-container {
     position: relative;
-    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
-    background: #000011;
-    height: 911px;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #f6f9fc;
+    z-index: -2;
     overflow: hidden;
 }
 
-.globe-content {
-    position: relative;
+
+.linear-border {
     width: 1080px;
+    height: 100%;
+    border-left: 2px dashed rgba(128, 128, 128, 0.377);
+    border-right: 2px dashed rgba(128, 128, 128, 0.377);
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: -1;
+}
+
+.globe-content {
+    width: 100vw;
+    background: #000011;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+    position: relative;
     color: #fff;
-    display: flex;
-    height: 911px;
     padding: 0 0 0 16px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
 }
 
 .globe-content-wrapper {
     gap: 96px;
+    width: 1080px;
+    border-left: 2px dashed rgba(128, 128, 128, 0.377);
+    border-right: 2px dashed rgba(128, 128, 128, 0.377);
     display: flex;
     flex-direction: column;
-    z-index: 5;
-    width: 100%;
     margin: 287px 0 128px;
 }
 
@@ -36,11 +51,7 @@
     bottom: -290px;
     border: none;
     scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-
-.globe-container iframe::-webkit-scrollbar {
-    display: none;
+    z-index: 90;
 }
 
 .global-comrce-content {
@@ -48,10 +59,12 @@
     flex-direction: column;
     align-items: flex-start;
     padding-left: 16px;
+    z-index: 100;
 }
 
 .global-comrce-content h6 {
     color: rgba(0, 212, 255, 1);
+    z-index: 100;
     font-weight: 500;
     font-size: 16px;
 }
@@ -75,6 +88,7 @@
 .globe-footer {
     display: flex;
     width: 992px;
+    z-index: 100;
 }
 
 .global-comrce-footer {
@@ -107,11 +121,12 @@
     color: rgba(0, 212, 255, 1);
 }
 
-@media screen and (max-width: 1080px) {
-    .globe-content-wrapper {
+@media screen and (max-width: 1024px) {
+    .linear-border {
         width: 992px;
     }
-    .globe-content {
-        margin-left: 20px;
+
+    .globe-container iframe{
+        right: 0;
     }
 }

@@ -1,7 +1,6 @@
 .agility {
     display: flex;
     justify-content: center;
-    overflow: hidden;
 }
 
 .agility-wrapper {
@@ -396,6 +395,9 @@
 }
 
 @media screen and (max-width: 1080px) {
+    .agility {
+        display: none;
+    }
     .agility-wrapper {
         width: 992px;
         padding: 0 32px;

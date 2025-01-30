@@ -1,19 +1,18 @@
 .logo {
-    height: 250px;
-    overflow: hidden;
     display: flex;
     justify-content: center;
 }
 
 .logo-wrapper {
     display: flex;
-    width: 1080px;
+    width: clamp(347px, 100%, 1080px);
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     gap: 60px;
     border-left: 2px dashed rgba(128, 128, 128, 0.377);
     border-right: 2px dashed rgba(128, 128, 128, 0.377);
+    margin-bottom: 72px;
 }
 
 .logo-compani-conteiner {
@@ -21,9 +20,9 @@
 }
 
 .logo-grid {
-    width: 500px;
     display: flex;
-    justify-content: space-around;
+    gap: 70px;
+    width: clamp(347px, 100%, 540px);
 }
 
 .logo-grid img {
@@ -31,9 +30,47 @@
     height: 40px;
 }
 
-
 @media screen and (max-width: 1080px) {
-    .logo-wrapper {
-        width: 992px;
+    .logo-grid {
+        gap: 48px;
+    }
+
+    .logo-grid img {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo-grid {
+        gap: 24px;
+    }
+
+    .logo-grid img {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .logo-grid {
+        gap: 5px;
+    }
+
+
+    @media screen and (max-width: 640px) {
+        .logo-compani-conteiner {
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+        }
+    }
+
+
+
+    @media screen and (max-width:390px) {
+
+        .logo-grid {
+            width: 347px;
+            justify-content: center;
+        }
     }
 }

@@ -1,8 +1,8 @@
 footer {
     background-color: #ffffff;
     display: flex;
-    overflow: hidden;
     align-items: center;
+    position: relative;
 }
 
 .footer-container {
@@ -96,6 +96,12 @@ footer {
     position: absolute;
     left: 0;
     top: 4px;
+}
+
+.footer-column .contact-info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 @media screen and (max-width: 1080px) {
