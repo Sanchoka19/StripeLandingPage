@@ -10,15 +10,16 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 1080px;
+    width: clamp(347px, 100%, 1080px);
     margin: 0 auto;
     border-left: 2px dashed rgba(128, 128, 128, 0.377);
     border-right: 2px dashed rgba(128, 128, 128, 0.377);
+
+
 }
 
 .footer-logo {
-    flex: 1;
-    min-width: 200px;
+    width: 200px;
     margin-right: 20px;
     display: flex;
     flex-direction: column;
@@ -28,9 +29,12 @@ footer {
 }
 
 .text {
-    position: absolute;
-    top: 37px;
-    left: 30px;
+    color: #0A2540;
+
+}
+
+#phone-number {
+    color: rgb(14, 121, 215);
 }
 
 .footer-logo h2 {
@@ -41,6 +45,7 @@ footer {
 .footer-logo span {
     color: #0A2540;
     font-size: 14px;
+    padding: 0 0 0 10px;
 }
 
 .footer-links {
@@ -48,11 +53,13 @@ footer {
     flex: 3;
     justify-content: space-between;
     flex-wrap: wrap;
+
+
 }
 
 .footer-column {
     flex: 1;
-    min-width: 200px;
+    width: clamp(168px, 100%, 270px);
     padding: 0 16px;
     border-left: 2px dashed rgba(128, 128, 128, 0.377);
 }
@@ -75,6 +82,7 @@ footer {
     text-decoration: none;
     color: #0A2540;
     transition: .2s ease;
+    font-size: 14px;
 }
 
 .footer-column ul li a:hover {
@@ -95,17 +103,16 @@ footer {
 .united-icon img {
     position: absolute;
     left: 0;
-    top: 4px;
+    top: 1px;
 }
 
-.footer-column .contact-info {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
 
-@media screen and (max-width: 1080px) {
-    .footer-container {
-        width: 992px;
+@media screen and (max-width: 1080px) {}
+
+@media screen and (max-width: 768px) {
+    .footer-logo {
+        width: 347px;
+        margin-bottom: 20px;
     }
+
 }
