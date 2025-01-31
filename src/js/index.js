@@ -145,3 +145,6 @@ function updateLineNumbers() {
 
 editor.addEventListener("keyup", updateLineNumbers);
 editor.addEventListener("keydown", updateLineNumbers);
+
+
+
