@@ -330,7 +330,6 @@
 .payment-container {
     background: #fff;
     border-radius: 45px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 303px;
     padding: 24px 16px 28px 16px;
     display: flex;
@@ -925,7 +924,7 @@
     font-weight: 700;
     line-height: 48px;
     color: #0A2540;
-   
+
 }
 
 .main-container-connect-heder p {
@@ -971,6 +970,49 @@
         grid-template-columns: 1fr;
     }
 
+    .pricing-container .pricing-plans .plan {
+        width: clamp(110px, 100%, 167px);
+    }
+
+    .pricing-container .pricing-plans .plan .subscribe-btn {
+        padding: 4px 27px;
+        font-size: 6.84px;
+    }
+
+    .pricing-container .pricing-plans .plan h3 {
+        font-size: 7.01px
+    }
+
+    .pricing-container .pricing-plans .plan .price {
+        font-size: 14.24px;
+    }
+
+    .plan ul li {
+        font-size: 6.61px;
+    }
+
+    .plan:nth-child(2) h3 span {
+        font-size: 4.51px;
+    }
+
+    .main-container-content:nth-child(3) .main-container-item:nth-child(2) .pricing-container {
+        width: clamp(347px, 100%, 540px);
+    }
+
+    .main-container-content:nth-child(2) {
+        margin: 0;
+    }
+
+    .main-container-content:nth-child(3) {
+        margin: 0;
+    }
+
+    .main-container-content:nth-child(4) {
+        margin: 0;
+    }
+
+
+    .main-container-content:nth-child(3) .main-container-item:nth-child(2) .pricing-container {}
 
     .main-container-item:nth-child(even) {
         border-left: none;
@@ -993,6 +1035,11 @@
 
     .main-container-content:nth-child(1) .main-container-item:nth-child(2),
     .main-container-content:nth-child(5) .main-container-item:nth-child(2) {
-        margin:  120px 0;
+        margin: 120px 0;
+    }
+
+    .main-container-item:nth-child(2n) {
+        border-left: none;
+        margin: 100px 0 0 0;
     }
 }

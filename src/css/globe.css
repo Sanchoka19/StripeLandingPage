@@ -23,7 +23,7 @@
 .globe-content {
     width: 100vw;
     background: #000011;
-    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 20%, 100% 70px, 100% 100%, 0% 100%);
     position: relative;
     color: #fff;
     padding: 0 0 0 16px;
@@ -142,6 +142,16 @@
         flex-wrap: wrap;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .globe-content {
+        clip-path: polygon(0px 19%, 100% 119px, 100% 100%, 0% 100%);
+    }
+    .globe-container iframe {
+        left: 0;
+    }
+}
+
 
 @media screen and (max-width: 390px) {
     .global-comrce-footer {
