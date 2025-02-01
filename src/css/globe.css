@@ -92,8 +92,14 @@
     display: flex;
     flex-wrap: wrap;
     z-index: 100;
+    gap: 20px;
 }
 
+.saba {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 .global-comrce-footer {
     height: 88px;

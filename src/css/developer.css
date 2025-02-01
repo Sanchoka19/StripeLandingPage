@@ -273,6 +273,10 @@
         flex-wrap: wrap;
     }
 
+    .developer-container-footer {
+        justify-content: flex-start;
+    }
+
     .developer-container {
         clip-path: polygon(0% 10%, 100% 7%, 100% 90%, 0% 93%);
     }

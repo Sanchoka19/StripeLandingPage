@@ -327,7 +327,7 @@
 
 /* /////////    mobile Form      //////////// */
 
-.payment-container {
+.main-container .payment-container {
     background: #fff;
     border-radius: 45px;
     width: 303px;

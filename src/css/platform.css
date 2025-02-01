@@ -159,6 +159,9 @@
 }
 
 @media screen and (max-width: 1080px) {
+    .platform-container{
+        padding: 0 0 73px 0;
+    }
     .platform-cards {
         flex-wrap: wrap;
     }
