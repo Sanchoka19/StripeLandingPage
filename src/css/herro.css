@@ -185,6 +185,42 @@ header nav ul a:hover {
     left: 176px;
 }
 
+.chart-container .payment-container {
+    position: absolute;
+    z-index: 50;
+    top: 90px;
+    background: #fff;
+    border-radius: 45px;
+    width: 270px;
+    padding: 24px 16px 28px 16px;
+    display: flex;
+    flex-direction: column;
+    color: rgba(10, 37, 64, 1);
+    align-items: center;
+    box-shadow: 0px 5px 50px rgba(10, 37, 64, 0.5);
+
+    left: -7px;
+}
+
+.chart-container .input-box input{
+    padding: 5px;
+}
+
+.chart-container .input-box label {
+    margin-bottom: 2px;
+}
+
+.chart-container .product-title {
+    margin: 10px;
+}
+
+.chart-container .apple-pay {
+    margin: 0 0 10px 0;
+}
+
+.chart-container .product-image {
+    height: 70px;
+}
 /* Absolute Positioned Images */
 .chart-images,
 .phone-img {
@@ -194,6 +230,7 @@ header nav ul a:hover {
 
 .chart-images {
     z-index: 3;
+    left: 20px;
 }
 
 .phone-img {

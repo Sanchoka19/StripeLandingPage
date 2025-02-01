@@ -3,6 +3,7 @@ footer {
     display: flex;
     align-items: center;
     position: relative;
+    justify-content: center;
 }
 
 .footer-container {
@@ -11,11 +12,9 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     width: clamp(347px, 100%, 1080px);
-    margin: 0 auto;
     border-left: 2px dashed rgba(128, 128, 128, 0.377);
     border-right: 2px dashed rgba(128, 128, 128, 0.377);
-
-
+    margin: 120px 0 73px 0;
 }
 
 .footer-logo {

@@ -32,7 +32,6 @@ const changeSection = (activeIconId) => {
         }, 300); // Wait for opacity transition
     });
 
-
     const activeContainer = document.getElementById(sections[activeIconId]);
     setTimeout(() => {
         activeContainer.style.display = "flex";
@@ -43,6 +42,9 @@ const changeSection = (activeIconId) => {
     icons.forEach((iconId) => {
         document.getElementById(iconId).style.opacity = iconId === activeIconId ? "1" : "0.2";
     });
+
+    // Update icon styles based on screen size
+    updateIcons(activeIconId);  // Call updateIcons to adjust opacity and transformation
 
     // Scroll to the corresponding section
     const targetSection = document.getElementById(sections[activeIconId]);
@@ -56,6 +58,29 @@ const changeSection = (activeIconId) => {
 icons.forEach((iconId) => {
     document.getElementById(iconId).addEventListener("click", () => changeSection(iconId));
 });
+
+// Update icons based on window size and active icon
+function updateIcons(activeIconId) {
+    const icons = ["bmw-ico", "amazon-ico", "maresk-ico", "twilo-ico"];
+
+    if (window.innerWidth > 1090) {
+        // Default behavior for screens larger than 1090px
+        icons.forEach((iconId) => {
+            document.getElementById(iconId).style.opacity = iconId === activeIconId ? "1" : "0.2";
+        });
+    } else {
+        icons.forEach((iconId) => {
+            document.getElementById(iconId).style.opacity = iconId === activeIconId ? "0" : "0";
+        });
+    }
+}
+
+// Listen for window resize to dynamically adjust styles
+window.addEventListener("resize", () => {
+    const activeIconId = icons.find(iconId => document.getElementById(iconId).style.opacity === "1");
+    updateIcons(activeIconId); // Adjust based on the current active icon
+});
+
 
 
 const editor = document.getElementById("editor");

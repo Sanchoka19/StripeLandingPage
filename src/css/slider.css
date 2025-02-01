@@ -8,11 +8,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1080px;
-    height: 1163px;
+    width: clamp(347px, 100%, 1080px);
     gap: 40px;
     border-left: 2px dashed rgba(128, 128, 128, 0.377);
     border-right: 2px dashed rgba(128, 128, 128, 0.377);
+
+    margin: 120px 0;
 }
 
 .agility-title {
@@ -21,6 +22,8 @@
     flex-direction: column;
     gap: 24px;
     padding: 0 0 0 16px;
+    color: rgba(10, 37, 64, 1);
+    width: clamp(315px, 100%, 688px);
 }
 
 .agility-title h6 {
@@ -31,13 +34,10 @@
 
 .agility-title h3 {
     font-size: 34.73px;
-    color: rgba(10, 37, 64, 1);
 }
 
 .agility-title p {
     font-size: 16.45px;
-    color: rgba(10, 37, 64, 1);
-    width: 719.61px;
 }
 
 .universal-button {
@@ -254,7 +254,7 @@
 /* twilio card */
 #twilo .amazon-card {
     background: url("../images/twilio.webp");
-    
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -340,7 +340,6 @@
 }
 
 .amazon-card-footer {
-    width: 405px;
     color: #fff;
     font-size: 24.5px;
     z-index: 66;
@@ -373,8 +372,11 @@
 
 #maresk-ico {
     opacity: 0.3;
-    width: 200px;
     height: 40px;
+}
+
+.agilty-nav ul li img {
+    width: clamp(200px, 100%, 270px);
 }
 
 #twilo-ico {
@@ -395,14 +397,96 @@
 }
 
 @media screen and (max-width: 1080px) {
-    .agility {
-        display: none;
+    .agility-card {
+        flex-wrap: wrap;
+        gap: 32px;
     }
+
     .agility-wrapper {
-        width: 992px;
         padding: 0 32px;
+        margin: 73px 0;
     }
+
+    .agility-card-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .agility-card-content {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .agilty-nav ul li:active {
+        border-top: black
+    }
+
+    .agilty-nav {
+        width: clamp(347px, 100%, 736px);
+        justify-content: center;
+        height: 10px;
+    }
+
     .amazon-card {
-        width: 744px;
+        width: clamp(347px, 100%, 980px);
+        margin: auto;
+    }
+
+    .agility-card-content-item p {
+        padding: 0;
+    }
+
+    .agilty-nav ul li:nth-child(4) {
+        height: 10px;
+        width: 24px;
+    }
+
+    #bmw-ico,
+    #amazon-ico,
+    #maresk-ico,
+    #twilo-ico {
+        opacity: 0;
+    }
+
+    .agilty-nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .agilty-nav ul li {
+        display: flex;
+        align-items: flex-start;
+        width: 30px;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .agilty-nav ul li img {
+        width: 100px;
+        position: absolute;
+        top: -15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .amazon-card {
+        width: clamp(736px, 100%, 347px);
+    }
+
+    .agility-card-content-item h3 {
+        font-size: 14px;
+    }
+
+    .agility-card-content-item span {
+        font-size: 13px;
+    }
+
+    .amazon-card-footer {
+        width: clamp(282px, 100%, 405px);
+    }
+
+    .agility-card-content-item p {
+        font-size: 10px;
     }
 }
