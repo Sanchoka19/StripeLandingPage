@@ -1,17 +1,16 @@
 /* Main Container */
 .developer-container {
-    height: 1361px;
     clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
     background: #0a2540;
     color: #fff;
     display: flex;
     justify-content: center;
-    overflow: hidden;
     padding: 287px 0;
 }
 
 .developer-container-wrapper {
-    width: 1080px;
+    overflow: hidden;
+    width: clamp(347px, 100%, 1080px);
     display: flex;
     flex-direction: column;
     gap: 96px;
@@ -22,6 +21,7 @@
 /* Header Card */
 .developer-container-header {
     display: flex;
+    justify-content: center;
 }
 
 .developer-container-header-card {
@@ -30,6 +30,7 @@
     align-items: flex-start;
     gap: 24px;
     padding: 0 64px 73px 13px;
+    width: clamp(328px, 100%, 460px);
 }
 
 .developer-container-header-card h4 {
@@ -40,11 +41,11 @@
 .developer-container-header-card h2 {
     font-size: 36px;
     font-weight: 500;
-    width: 460px;
+    /* width: clamp(315px, 100%, 460px); */
 }
 
 .developer-container-header-card p {
-    width: 443px;
+    /* width: clamp(328px, 100%, 443px); */
     font-size: 16.59px;
 }
 
@@ -62,10 +63,11 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 496px;
+    margin: 0 10px;
 }
 
 .developer-container-footer-card-iframe iframe {
-    width: 540px;
     height: 227px;
     border: none;
     border-radius: 10px;
@@ -73,6 +75,8 @@
     background: rgba(6, 24, 44, 1);
     color: #fff;
     font-family: inter;
+
+    width: clamp(347px, 100%, 538px);
 }
 
 /* JS Container */
@@ -127,11 +131,15 @@
     overflow: auto;
     font-size: 14px;
     height: 249px;
+    width: clamp(347px, 100%, 538px);
 }
 
 /* Footer Cards */
 .developer-container-footer {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .developer-container-footer-card {
@@ -144,15 +152,14 @@
 .developer-container-footer-card h3 {
     font-size: 13px;
     font-weight: 500;
-    border-left: 1px solid rgba(0, 212, 255, 1);
-    padding-left: 15px;
+    /* border-left: 1px solid rgba(0, 212, 255, 1); */
 }
 
 .developer-container-footer-card p {
     color: rgba(173, 189, 204, 1);
     font-size: 13.59px;
     line-height: 24px;
-    width: 212px;
+    width: 193px;
 }
 
 .developer-container-footer-card span {
@@ -261,8 +268,12 @@
 }
 
 
-@media screen and (max-width: 1080px) {
-    .developer-container-wrapper {
-        width: 992px;
+@media screen and (max-width: 768px) {
+    .developer-container-header {
+        flex-wrap: wrap;
+    }
+
+    .developer-container {
+        clip-path: polygon(0% 10%, 100% 7%, 100% 90%, 0% 93%);
     }
 }

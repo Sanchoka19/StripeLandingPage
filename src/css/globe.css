@@ -1,31 +1,46 @@
 .globe-container {
     position: relative;
-    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
-    background: #000011;
-    height: 911px;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #f6f9fc;
+    z-index: -2;
     overflow: hidden;
 }
 
+
+.linear-border {
+    height: 100%;
+    border-left: 2px dashed rgba(128, 128, 128, 0.377);
+    border-right: 2px dashed rgba(128, 128, 128, 0.377);
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: -1;
+}
+
 .globe-content {
+    width: 100vw;
+    background: #000011;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
     position: relative;
-    width: 1080px;
     color: #fff;
-    display: flex;
-    height: 911px;
     padding: 0 0 0 16px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
 }
 
 .globe-content-wrapper {
     gap: 96px;
+    border-left: 2px dashed rgba(128, 128, 128, 0.377);
+    border-right: 2px dashed rgba(128, 128, 128, 0.377);
     display: flex;
     flex-direction: column;
-    z-index: 5;
-    width: 100%;
-    margin: 287px 0 128px;
+    margin: 287px 0 128px 0;
+    width: clamp(347px, 100%, 1080px);
+
 }
 
 .globe-container iframe {
@@ -36,11 +51,7 @@
     bottom: -290px;
     border: none;
     scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-
-.globe-container iframe::-webkit-scrollbar {
-    display: none;
+    z-index: 90;
 }
 
 .global-comrce-content {
@@ -48,10 +59,12 @@
     flex-direction: column;
     align-items: flex-start;
     padding-left: 16px;
+    z-index: 100;
 }
 
 .global-comrce-content h6 {
     color: rgba(0, 212, 255, 1);
+    z-index: 100;
     font-weight: 500;
     font-size: 16px;
 }
@@ -69,20 +82,26 @@
     font-size: 17px;
     font-weight: 500;
     line-height: 28px;
-    width: 400px;
+    width: clamp(315px, 100%, 400px);
+
+
+
 }
 
 .globe-footer {
     display: flex;
-    width: 992px;
+    flex-wrap: wrap;
+    z-index: 100;
 }
+
 
 .global-comrce-footer {
     height: 88px;
-    width: 270px;
+    width: clamp(248px, 100%, 270px);
     display: flex;
     flex-direction: column;
     gap: 8px;
+
 }
 
 .global-comrce-footer h4 {
@@ -107,11 +126,25 @@
     color: rgba(0, 212, 255, 1);
 }
 
-@media screen and (max-width: 1080px) {
-    .globe-content-wrapper {
+@media screen and (max-width: 1024px) {
+    .linear-border {
         width: 992px;
+
     }
-    .globe-content {
-        margin-left: 20px;
+
+    .globe-container iframe {
+        right: 0;
+
+    }
+
+    .global-comrce-footer {
+        width: 368px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .global-comrce-footer {
+        width: 347px;
     }
 }

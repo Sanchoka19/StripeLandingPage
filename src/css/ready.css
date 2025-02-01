@@ -9,10 +9,10 @@
 }
 
 .ready-conteiner-wrapper {
-    width: 1080px;
+    width: clamp(347px, 100%, 1080px);
     display: flex;
     gap: 112px;
-    height: 241px;
+    justify-content: center;
     border-left: 2px dashed rgba(128, 128, 128, 0.377);
     border-right: 2px dashed rgba(128, 128, 128, 0.377);
 }
@@ -22,16 +22,9 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-    padding: 0 112px 16px 16px;
-}
-
-.ready-conteiner-explore h3 {
     color: #0A2540;
-}
-
-.ready-conteiner-explore p {
-    width: 412px;
-    color: #425466;
+    padding: 0 16px 16px 16px;
+    width: clamp(315px, 100%, 412px);
 }
 
 .ready-conteiner-explore p a {
@@ -52,7 +45,7 @@
 .ready-conteiner-button button {
     background-color: #635BFF;
     border-radius: 16px;
-    padding: 3px 26px 6px 16px;
+    padding: 4px 26px 4px 16px;
     border: 2px;
     color: #FFF;
 }
@@ -97,9 +90,9 @@
     position: absolute;
     height: 72px;
     width: 104%;
-    bottom: 69px;
+    bottom: 55px;
     z-index: 10;
-    rotate: -6deg;
+    rotate: -5deg;
     display: flex;
     justify-content: space-between;
 }
@@ -155,18 +148,81 @@
     left: 30px;
 }
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1440px) {
     .rectagle {
-        rotate: -8deg;
+        rotate: -9deg;
+        bottom: 55px;
+    }
+
+    .left-rectangle-purple {
+        left: -220px;
+    }
+
+    .left-rectangle-blue {
+        left: 85px;
+    }
+
+    .right-rectangle-purple {
+        right: 100px;
+    }
+
+    .right-rectangle-blue {
+        left: 200px;
     }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1024px) {
+    .ready-conteiner {
+        clip-path: polygon(0 0, 100% 0, 270% 70%, 0% 100%);
+    }
+
+    .ready-conteiner-explore {
+        align-self: flex-start;
+    }
+
     .ready-conteiner-wrapper {
-        width: 992px;
+        flex-wrap: wrap;
     }
 
     .rectagle {
-        rotate: -11deg;
+        rotate: -6deg;
+        bottom: -5px;
+    }
+
+    .left-rectangle-purple {
+        left: -430px;
+    }
+
+    .left-rectangle-blue {
+        left: -117px;
+    }
+
+    .right-rectangle-purple {
+        right: -117px;
+    }
+
+    .right-rectangle-blue {
+        left: 417px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ready-conteiner-card-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .ready-conteiner {
+        clip-path: polygon(0 0, 100% 0, 530% 70%, 0% 100%);
+    }
+
+    .rectagle {
+        rotate: -5deg;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+    .rectagle {
+        rotate: -7deg;
     }
 }

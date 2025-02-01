@@ -1,22 +1,21 @@
 .platform-container {
     display: flex;
-    overflow: hidden;
     justify-content: center;
     padding: 287px 0 128px;
 }
 
 .platform-wrapper {
-    width: 1080px;
     display: flex;
     flex-direction: column;
     gap: 64px;
     border-left: 2px dashed rgba(128, 128, 128, 0.377);
     border-right: 2px dashed rgba(128, 128, 128, 0.377);
     padding: 0 16px;
+    width: clamp(347px, 100%, 1080px);
 }
 
 .ease-container {
-    width: 600px;
+    width: clamp(315px, 100%, 600px);
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -56,6 +55,7 @@
 .platform-cards {
     display: flex;
     gap: 16px;
+    justify-content: center;
 }
 
 .platform-card {
@@ -81,6 +81,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 8px;
+    width: 340px;
 }
 
 .platform-card-content-wrapper {
@@ -106,18 +107,15 @@
     color: #635BFF;
 }
 
-.platform-card-content-wrapper img {
-    padding: 4px 4px 0;
-}
-
 /* Icons */
 .platform-card-icons {
+    justify-content: center;
     display: flex;
     padding: 4px 4px 0;
 }
 
 .platform-card-icons img {
-    width: 330.66px;
+    width: clamp(338px, 100% 347px);
 }
 
 /* Hidden Text */
@@ -161,19 +159,7 @@
 }
 
 @media screen and (max-width: 1080px) {
-    .platform-wrapper {
-        width: 992px;
-    }
-
-    .platform-card {
-        width: 301.33px;
-    }
-
     .platform-cards {
         flex-wrap: wrap;
-    }
-
-    .platform-card-icons img {
-        width: 290px;
     }
 }

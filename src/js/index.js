@@ -1,77 +1,16 @@
-// main container animation
-const lines = document.querySelectorAll('.line');
-const lineSquareMap = {
-    line1: 'payments',
-    line2: 'terminal',
-    line3: 'data',
-    line4: 'integration',
-    line5: 'security',
-    line6: 'square10',
-    line7: 'square11',
-    line8: 'square9',
-    line9: 'square13',
-    line10: 'square14',
-    line11: 'square17', // This ID is missing in your HTML!
-    line12: 'square7',
-    line13: 'square12',
-    line14: 'square15',
-    line15: 'square8',
-    line16: 'square16',
-    line17: 'connect',
-    line18: 'data',
-};
+const burgerMenu = document.querySelector(".menu-icon");
+const menu = document.querySelector(".navlist");
+const closeBtn = document.getElementById("burger-ico");
 
-const numLines = lines.length;
+console.log(burgerMenu);
 
-function animateLine(line) {
-    line.classList.remove('animate');
-    void line.offsetWidth; // Trigger reflow for animation restart
-    line.classList.add('animate');
+const openBurgerMenu = () => {
+    menu.classList.toggle("active");
+    closeBtn.classList.toggle("active");
 }
 
-function highlightSquare(line) {
-    const targetSquareId = lineSquareMap[line.id];
+burgerMenu.addEventListener("click", openBurgerMenu);
 
-    if (targetSquareId) {
-        const targetSquare = document.getElementById(targetSquareId);
-        if (targetSquare) {
-            targetSquare.classList.add('highlighted');
-            setTimeout(() => targetSquare.classList.remove('highlighted'), 500);
-        } else {
-            console.warn(`Square with ID "${targetSquareId}" not found for line ${line.id}`);
-        }
-    }
-}
-
-function toggleRandomLine() {
-    const randomIndex = Math.floor(Math.random() * numLines);
-    const randomLine = lines[randomIndex];
-
-    if (randomLine && randomLine.classList) { // Check if randomLine is valid
-        if (randomLine.classList.contains('hidden')) {
-            randomLine.classList.remove('hidden');
-            animateLine(randomLine);
-            highlightSquare(randomLine);
-        } else {
-            randomLine.classList.add('hidden');
-        }
-    }
-}
-
-// Use DOMContentLoaded instead of load.
-document.addEventListener('DOMContentLoaded', () => {
-    let initialDelay = 500;
-    lines.forEach(line => {
-        setTimeout(() => {
-            line.classList.remove('hidden');
-            animateLine(line);
-            highlightSquare(line);
-        }, initialDelay);
-        initialDelay += 500;
-    });
-
-    setInterval(toggleRandomLine, 1500);
-});
 
 // slide container
 const sections = {

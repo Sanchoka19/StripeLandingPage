@@ -3,18 +3,17 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
-    height: 840px;
     width: 100vw;
 }
 
 .hero-container-wrapper {
-    width: 1080px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-left: 2px dashed rgba(128, 128, 128, 0.377);
     border-right: 2px dashed rgba(128, 128, 128, 0.377);
+    width: clamp(390px, 100%, 1080px);
 }
 
 /* Header */
@@ -27,7 +26,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     z-index: 7;
-    width: 1080px;
+    width: clamp(355px, 100%, 1024px);
     justify-content: space-between;
 }
 
@@ -39,24 +38,17 @@ header {
     color: rgba(255, 255, 255, 1);
 }
 
-header nav {
-    display: flex;
-    align-items: center;
-    color: #fff;
-}
-
-.company-name {
-    font-weight: 1000;
-    font-size: 1.5rem;
-}
 
 header nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 523.55px;
     font-size: 14.18px;
     font-weight: 500;
+}
+
+header nav ul li {
+    padding: 10px 20px;
 }
 
 header nav ul li a {
@@ -133,21 +125,21 @@ header nav ul a:hover {
     background: hsla(266, 77%, 68%, 1);
     position: absolute;
     background-size: 200% 200%;
-    clip-path: polygon(0% 0%, 0% 100%, 210% 0%);
-    z-index: 5;
+    clip-path: polygon(0% 0%, 0% 100%, 480% 0%);
+    z-index: 1;
     top: -70px;
     overflow: hidden;
 }
 
 /* Financial Section */
 .financial {
-    z-index: 10;
-    margin-top: 165px;
-    width: 992px;
+    z-index: 5;
+    margin: 165px 0 175px 0;
+    width: clamp(347px, 100%, 1080px);
     display: flex;
     flex-direction: column;
     gap: 32px;
-    padding: 10px 0 10px 10px;
+    padding: 10px 0 10px 16px;
 }
 
 .financial h3 {
@@ -175,13 +167,13 @@ header nav ul a:hover {
     color: black;
     font-weight: 500;
     font-size: 83px;
-    max-width: 560px;
     width: 100%;
     line-height: 97.76px;
+    width: clamp(300px, 100%, 550px);
 }
 
 .financial p {
-    width: 471px;
+    width: clamp(300px, 100%, 550px);
     font-weight: 700;
     font-size: 1rem;
     line-height: 28px;
@@ -189,7 +181,7 @@ header nav ul a:hover {
 
 .chart-container {
     position: relative;
-    top: -567px;
+    top: -830px;
     left: 176px;
 }
 
@@ -197,17 +189,19 @@ header nav ul a:hover {
 .chart-images,
 .phone-img {
     position: absolute;
-    z-index: 8;
     overflow: hidden;
 }
 
-.chart-images {}
+.chart-images {
+    z-index: 3;
+}
 
 .phone-img {
     top: 100px;
     left: -20px;
     box-shadow: -1px 13px 11px #00000029;
     border-radius: 28px;
+    z-index: 4;
 }
 
 /* Contact Sales Button Section */
@@ -279,18 +273,137 @@ header nav ul a:hover {
     }
 }
 
-@media screen and (max-width: 1080px) {
-    header {
-        width: 1024px;
-    }
-
-    .hero-container-wrapper {
-        width: 992px;
-    }
-
+@media screen and (max-width: 1024px) {
     .polygon {
         clip-path: polygon(0% 0%, 0% 90%, 292% 0%);
     }
 
- 
+    .contact-sales-holder {
+        display: none;
+    }
+
+    .contact-sales-btn {
+        display: none;
+    }
+
+    .header-company-holder {
+        width: clamp(379px, 100%, 1024px);
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .header-company-holder img {
+        width: 59.7px;
+        position: fixed;
+    }
+
+    .contact-sales button {
+        display: none;
+    }
+
+    .navlist {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        border-radius: 12px;
+        width: 100vw;
+        height: 100vh;
+        transition: 1s ease;
+    }
+
+    .navlist.active {
+        display: flex;
+    }
+
+    .navlist li a {
+        color: #fff;
+    }
+
+    .menu-icon {
+        cursor: pointer;
+        position: fixed;
+        background-color: #00000029;
+        padding: 20px;
+        border-radius: 12px;
+        right: 15px;
+    }
+
+    .menu-icon span {
+        background-color: #fff;
+        height: 2px;
+        position: absolute;
+        width: 50%;
+        left: 0;
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+        left: 50%;
+        border-radius: 4px;
+    }
+
+    .menu-icon span:first-child {
+        top: 15px;
+    }
+
+    .menu-icon span:last-child {
+        bottom: 13px;
+    }
+
+    .menu-icon:hover span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.active span:first-child,
+    .menu-iconac.active span:last-child {
+        top: 50%;
+    }
+
+    .menu-icon.active span:first-child {
+        transform: rotate(45deg);
+    }
+
+    .menu-icon.active span:last-child {
+        transform: rotate(-45deg);
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .polygon {
+        clip-path: polygon(0% 0%, 0% 88%, 480% 0%);
+    }
+
+    .financial h2 {
+        font-size: 53.02px;
+        width: 384px;
+    }
+
+    .financial p {
+        width: 304px;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .polygon {
+        clip-path: polygon(0% 0%, 0% 69%, 480% 0%);
+    }
+
+    /* .financial {
+        margin: 160px 0 73px 0;
+    } */
+
+    .financial h2 {
+        font-size: 46.02px;
+        font-weight: 500;
+        line-height: 53.94px;
+    }
+
+    .financial p {
+        color: rgba(66, 84, 102, 1);
+    }
+
+    .chart-container {
+        display: none;
+    }
 }
