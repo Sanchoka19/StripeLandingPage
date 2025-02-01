@@ -492,7 +492,7 @@
 
 .visa-ph {
     position: absolute;
-    top: 27px;
+    top: 32px;
     right: 5px;
     width: 29px;
     height: 18px;
@@ -500,14 +500,14 @@
 
 .visa-p {
     position: absolute;
-    top: 5px;
+    top: 12px;
     right: 10px;
 }
 
 .trans {
     position: absolute;
     right: 8px;
-    top: 4px;
+    top: 10px;
 }
 
 .pay-button {

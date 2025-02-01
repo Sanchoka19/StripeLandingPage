@@ -221,12 +221,28 @@ header nav ul a:hover {
 .chart-container .product-image {
     height: 70px;
 }
+
+.chart-container .visa-ph{
+    top:21px;
+}
 /* Absolute Positioned Images */
 .chart-images,
 .phone-img {
     position: absolute;
     overflow: hidden;
 }
+
+.chart-container .visa-p{
+    top:8px;
+
+}
+
+.chart-container .trans{
+    top:7px;
+}
+
+
+
 
 .chart-images {
     z-index: 3;
