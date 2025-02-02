@@ -83,21 +83,16 @@
     font-weight: 500;
     line-height: 28px;
     width: clamp(315px, 100%, 400px);
-
-
-
 }
 
 .globe-footer {
     display: flex;
-    flex-wrap: wrap;
     z-index: 100;
     gap: 20px;
 }
 
 .saba {
     display: flex;
-    flex-direction: column;
     gap: 20px;
 }
 
@@ -135,7 +130,6 @@
 @media screen and (max-width: 1024px) {
     .linear-border {
         width: 992px;
-
     }
 
     .globe-container iframe {
@@ -143,9 +137,17 @@
 
     }
 
+    .globe-footer {
+        flex-wrap: wrap;
+    }
+
     .global-comrce-footer {
         width: 368px;
         flex-wrap: wrap;
+    }
+
+    .saba {
+        flex-direction: column;
     }
 }
 
@@ -153,6 +155,7 @@
     .globe-content {
         clip-path: polygon(0px 19%, 100% 119px, 100% 100%, 0% 100%);
     }
+
     .globe-container iframe {
         left: 0;
     }

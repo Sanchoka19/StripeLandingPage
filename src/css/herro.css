@@ -187,7 +187,7 @@ header nav ul a:hover {
 
 .chart-container .payment-container {
     position: absolute;
-    z-index: 50;
+    z-index: 5;
     top: 90px;
     background: #fff;
     border-radius: 45px;
@@ -202,7 +202,7 @@ header nav ul a:hover {
     left: -7px;
 }
 
-.chart-container .input-box input{
+.chart-container .input-box input {
     padding: 5px;
 }
 
@@ -222,9 +222,10 @@ header nav ul a:hover {
     height: 70px;
 }
 
-.chart-container .visa-ph{
-    top:21px;
+.chart-container .visa-ph {
+    top: 21px;
 }
+
 /* Absolute Positioned Images */
 .chart-images,
 .phone-img {
@@ -232,13 +233,13 @@ header nav ul a:hover {
     overflow: hidden;
 }
 
-.chart-container .visa-p{
-    top:8px;
+.chart-container .visa-p {
+    top: 8px;
 
 }
 
-.chart-container .trans{
-    top:7px;
+.chart-container .trans {
+    top: 7px;
 }
 
 
@@ -358,32 +359,35 @@ header nav ul a:hover {
     .navlist {
         display: none;
         flex-direction: column;
-        background-color: #333;
-        border-radius: 12px;
+        background-color: rgba(128, 128, 128, 0.777);
         width: 100vw;
         height: 100vh;
-        transition: 1s ease;
+        transition: 4s ease;
     }
-
+    
     .navlist.active {
+        position: fixed;
+        z-index: -1;
         display: flex;
+        right: 0;
+        top: 0;
     }
 
     .navlist li a {
-        color: #fff;
+        color: #000;
     }
 
     .menu-icon {
         cursor: pointer;
         position: fixed;
-        background-color: #00000029;
+        background-color: #ffffff8b;
         padding: 20px;
-        border-radius: 12px;
+        border-radius: 15px;
         right: 15px;
     }
 
     .menu-icon span {
-        background-color: #fff;
+        background-color: #000;
         height: 2px;
         position: absolute;
         width: 50%;
@@ -402,23 +406,29 @@ header nav ul a:hover {
         bottom: 13px;
     }
 
-    .menu-icon:hover span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-icon.active span:first-child,
-    .menu-iconac.active span:last-child {
-        top: 50%;
-    }
-
     .menu-icon.active span:first-child {
         transform: rotate(45deg);
+        top: 50%;
     }
 
     .menu-icon.active span:last-child {
         transform: rotate(-45deg);
+        bottom: 50%;
     }
 
+    .menu-icon span:nth-child(2) {
+        opacity: 1;
+    }
+
+    .menu-icon.active span:nth-child(2) {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    .menu-icon.active {
+        z-index: 1;
+        background-color: transparent;
+    }
 
 }
 
