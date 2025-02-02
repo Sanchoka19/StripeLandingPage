@@ -1,7 +1,6 @@
-/* Main Container */
 .developer-container {
     clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
-    background: #0a2540;
+    background: var(--primary-color);
     color: #fff;
     display: flex;
     justify-content: center;
@@ -10,12 +9,12 @@
 
 .developer-container-wrapper {
     overflow: hidden;
-    width: clamp(347px, 100%, 1080px);
+    width: var(--container-wrapper);
     display: flex;
     flex-direction: column;
-    gap: 96px;
-    border-left: 2px dashed rgba(128, 128, 128, 0.377);
-    border-right: 2px dashed rgba(128, 128, 128, 0.377);
+    gap: var(--gap-large);
+    border-left: 2px dashed var(--border-color);
+    border-right: 2px dashed var(--border-color);
 }
 
 /* Header Card */
@@ -41,11 +40,9 @@
 .developer-container-header-card h2 {
     font-size: 36px;
     font-weight: 500;
-    /* width: clamp(315px, 100%, 460px); */
 }
 
 .developer-container-header-card p {
-    /* width: clamp(328px, 100%, 443px); */
     font-size: 16.59px;
 }
 
@@ -56,6 +53,13 @@
     line-height: 24px;
     font-weight: 500;
     background-color: rgba(0, 212, 255, 1);
+    position: relative;
+}
+
+.developer-container-header-card .universal-button img {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
 }
 
 /* Footer Iframe */
@@ -115,7 +119,6 @@
     color: rgba(85, 113, 141, 1);
     text-align: right;
     padding: 10px;
-    font-family: monospace;
     font-size: 14px;
     line-height: 1.5;
 }
@@ -152,7 +155,6 @@
 .developer-container-footer-card h3 {
     font-size: 13px;
     font-weight: 500;
-    /* border-left: 1px solid rgba(0, 212, 255, 1); */
 }
 
 .developer-container-footer-card p {

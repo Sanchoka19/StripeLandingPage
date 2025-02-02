@@ -10,9 +10,29 @@
 @import url("./ready.css");
 
 @font-face {
-    font-family: inter;
-    src: url("../fonts/Inter-VariableFont_opsz\,wght.ttf");
+    font-family: "Inter";
+    src: url("../fonts/Inter-VariableFont_opsz,wght.ttf");
 }
+
+:root {
+    --container-wrapper: clamp(390px, 100%, 1080px);
+
+
+    --border-color: rgba(128, 128, 128, 0.377);
+    --primary-color: #0a2540;
+    --secondary-color: rgba(0, 212, 255, 1);
+    --navlist-color: rgba(255, 255, 255, 1);
+    --text-light: #0a2540b9;
+    --background-color: #f6f9fc;
+    --button-bg: #fff;
+    --button-hover: rgba(0, 0, 0, 0.26);
+    --polygon-bg: hsla(266, 77%, 68%, 1);
+    
+    --padding-large: 120px 0;
+    --gap-large: 96px;
+    --gap-small: 10px;
+}
+
 
 * {
     margin: 0;
@@ -21,13 +41,11 @@
 }
 
 html {
-    font-family: inter;
+    font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
 }
 
-button,
-li,
-a {
+button, li, a {
     cursor: pointer;
 }
 
@@ -38,16 +56,11 @@ button {
 body {
     overflow: auto;
     overflow-x: hidden;
+    scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
     display: none;
-    /* Chrome, Safari */
-}
-
-body {
-    scrollbar-width: none;
-    /* Firefox */
 }
 
 ul {
@@ -56,10 +69,7 @@ ul {
 
 a {
     text-decoration: none;
-}
-
-li {
-    transition: .2s ease;
+    color: inherit;
 }
 
 input {
