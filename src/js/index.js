@@ -1,12 +1,9 @@
 const burgerMenu = document.querySelector(".menu-icon");
 const menu = document.querySelector(".navlist");
-const closeBtn = document.getElementById("burger-ico");
-
-console.log(burgerMenu);
 
 const openBurgerMenu = () => {
     menu.classList.toggle("active");
-    closeBtn.classList.toggle("active");
+    burgerMenu.classList.toggle("active"); // Toggle the active class for the burger icon
 }
 
 burgerMenu.addEventListener("click", openBurgerMenu);

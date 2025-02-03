@@ -11,10 +11,10 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: clamp(347px, 100%, 1080px);
-    border-left: 2px dashed rgba(128, 128, 128, 0.377);
-    border-right: 2px dashed rgba(128, 128, 128, 0.377);
+    border-left: 2px dashed var(--border-color);
+    border-right: 2px dashed var(--border-color);
     margin: 120px 0 73px 0;
+    width: var(--container-wrapper);
 }
 
 .footer-logo {
@@ -52,8 +52,6 @@ footer {
     flex: 3;
     justify-content: space-between;
     flex-wrap: wrap;
-
-
 }
 
 .footer-column {
@@ -106,12 +104,11 @@ footer {
 }
 
 
-@media screen and (max-width: 1080px) {}
+/* @media screen and (max-width: 1080px) {} */
 
 @media screen and (max-width: 768px) {
     .footer-logo {
         width: 347px;
         margin-bottom: 20px;
     }
-
 }

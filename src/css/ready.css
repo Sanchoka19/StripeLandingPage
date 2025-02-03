@@ -9,12 +9,12 @@
 }
 
 .ready-conteiner-wrapper {
-    width: clamp(347px, 100%, 1080px);
+    width: var(--container-wrapper);
     display: flex;
     gap: 112px;
     justify-content: center;
-    border-left: 2px dashed rgba(128, 128, 128, 0.377);
-    border-right: 2px dashed rgba(128, 128, 128, 0.377);
+    border-left: 2px dashed var(--border-color);
+    border-right: 2px dashed var(--border-color);
 }
 
 .ready-conteiner-explore {
@@ -66,7 +66,6 @@
 
 .ready-conteiner-pricing-img {
     height: 40px;
-
 }
 
 .ready-conteiner-pricing span {
@@ -148,6 +147,17 @@
     left: 30px;
 }
 
+.universal-button {
+    position: relative;
+}
+
+.universal-button .arrow-right {
+    position: absolute;
+    bottom: 3px;
+    right: 25px;
+}
+
+
 @media screen and (max-width: 1440px) {
     .rectagle {
         rotate: -9deg;
@@ -218,7 +228,6 @@
     .rectagle {
         rotate: -5deg;
     }
-
 }
 
 @media screen and (max-width: 390px) {

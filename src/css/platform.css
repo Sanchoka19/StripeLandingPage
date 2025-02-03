@@ -8,10 +8,10 @@
     display: flex;
     flex-direction: column;
     gap: 64px;
-    border-left: 2px dashed rgba(128, 128, 128, 0.377);
-    border-right: 2px dashed rgba(128, 128, 128, 0.377);
+    border-left: 2px dashed var(--border-color);
+    border-right: 2px dashed var(--border-color);
     padding: 0 16px;
-    width: clamp(347px, 100%, 1080px);
+    width: var(--container-wrapper);
 }
 
 .ease-container {
@@ -21,7 +21,6 @@
     flex-direction: column;
 }
 
-/* Link Styles */
 .launch-with-ease {
     font-size: 14px;
     font-weight: 600;
@@ -43,7 +42,6 @@
     margin-bottom: 15px;
 }
 
-/* Description */
 .developers-description {
     font-size: 16px;
     line-height: 1.6;
@@ -51,7 +49,6 @@
     margin: 0;
 }
 
-/* Platform Cards */
 .platform-cards {
     display: flex;
     gap: 16px;
@@ -107,7 +104,6 @@
     color: #635BFF;
 }
 
-/* Icons */
 .platform-card-icons {
     justify-content: center;
     display: flex;
@@ -118,7 +114,6 @@
     width: clamp(338px, 100% 347px);
 }
 
-/* Hidden Text */
 .see-hidden-text {
     font-size: 14px;
     color: #007bff;
@@ -138,7 +133,6 @@
     transform: translateY(0);
 }
 
-/* Directory Link */
 .see-hidden-link {
     text-decoration: none;
     color: #007bff;
@@ -159,9 +153,10 @@
 }
 
 @media screen and (max-width: 1080px) {
-    .platform-container{
-        padding: 0 0 73px 0;
+    .platform-container {
+        padding: 73px 0;
     }
+
     .platform-cards {
         flex-wrap: wrap;
     }
