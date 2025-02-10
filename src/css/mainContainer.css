@@ -177,7 +177,6 @@
 
     30% {
         transform: translateY(50px) scale(0.95);
-        /* Slight shrink as it moves down */
         opacity: 1;
         z-index: 2;
         /* Second card moves */
@@ -185,7 +184,6 @@
 
     50% {
         transform: translateY(100px) scale(0.9);
-        /* Shrinks more as it moves */
         opacity: 1;
         z-index: 1;
         /* First card moves to the bottom */
@@ -193,7 +191,6 @@
 
     60% {
         transform: translateY(150px) scale(0.85);
-        /* Shrinks and disappears */
         opacity: 0;
         z-index: 0;
         /* Last card moves out of view */
@@ -201,7 +198,6 @@
 
     70% {
         transform: translateY(180px) scale(0.8);
-        /* Card further shrinks out of view */
         opacity: 0;
         z-index: 0;
         /* Still out of view */
@@ -209,16 +205,13 @@
 
     80% {
         transform: translateY(-10px) scale(1.05);
-        /* Start reappearing with slight grow */
         opacity: 0.5;
-        /* Fade in */
         z-index: 3;
         /* Last card on top */
     }
 
     90% {
         transform: translateY(0) scale(1);
-        /* Full size and fully visible */
         opacity: 1;
         z-index: 3;
         /* Last card stays on top */
@@ -228,7 +221,6 @@
         transform: translateY(0) scale(1);
         opacity: 1;
         z-index: 3;
-        /* Last card stays on top */
     }
 }
 
@@ -715,7 +707,7 @@
 }
 
 .plan:nth-child(2) h3 span {
-    font-size: 5.51px;
+    font-size: 3.51px;
 }
 
 .pricing-container .pricing-plans .plan .subscribe-btn {
@@ -1034,5 +1026,11 @@
     .main-container-item:nth-child(2n) {
         border-left: none;
         margin: 100px 0 0 0;
+    }
+}
+
+@media screen and(max-width: 390px) {
+    .main-container-wrapper .main-container-content:nth-child(2) .main-container-item:nth-child(1){
+        padding: 0;
     }
 }
