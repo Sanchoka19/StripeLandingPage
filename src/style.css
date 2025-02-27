@@ -1307,6 +1307,329 @@ input {
   }
 }
 
+.container-wrapper-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 120px 0;
+}
+.container-wrapper-5 .agility-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 0 0 0 16px;
+  width: clamp(315px, 100%, 688px);
+}
+.container-wrapper-5 .agility-title h6 {
+  font-size: 1rem;
+  color: rgb(99, 91, 255);
+}
+.container-wrapper-5 .agility-title h3 {
+  font-size: 34.73px;
+  color: #0a2540;
+}
+.container-wrapper-5 .agility-title p {
+  font-size: 16.45px;
+}
+.container-wrapper-5 .agility-card-wrapper {
+  display: flex;
+  gap: 32px;
+}
+.container-wrapper-5 .agility-card-wrapper .agility-card {
+  display: flex;
+}
+.container-wrapper-5 .agility-card-wrapper .agility-card-content {
+  width: 238px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 48px;
+}
+.container-wrapper-5 .agility-card-wrapper .agility-card-content-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+.container-wrapper-5 .agility-card-wrapper .agility-card-content-item h3 {
+  padding: 0 0 0 16px;
+  font-size: 24px;
+  border-left: 1px solid black;
+  transition: 0.3s ease;
+}
+.container-wrapper-5 .agility-card-wrapper .agility-card-content-item h3:hover {
+  border-left: 1px solid rgba(128, 128, 128, 0.377);
+}
+.container-wrapper-5 .agility-card-wrapper .agility-card-content-item p {
+  font-size: 13.83px;
+  padding: 0 0 0 16px;
+}
+.container-wrapper-5 .agility-card-wrapper .agility-card-content-item:nth-child(3) span {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 0 0 0 16px;
+}
+.container-wrapper-5 .agility-card-wrapper .agility-card-content-item:nth-child(3) h3 {
+  font-size: 13.95px;
+}
+.container-wrapper-5 .agility-card-wrapper .agility-card .amazon-card {
+  border-radius: 20px;
+  height: 410px;
+  display: flex;
+}
+.container-wrapper-5 .agility-card-wrapper .agility-card .amazon-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 1000;
+}
+.container-wrapper-5 .agility-card-wrapper .agility-card .amazon-card-wrapper .amazon-card-header {
+  display: flex;
+  justify-content: space-between;
+  z-index: 66;
+}
+.container-wrapper-5 .agility-card-wrapper .agility-card .amazon-card-wrapper .amazon-card-header img:nth-child(2) {
+  width: 19px;
+  height: 20px;
+  transition: 1s ease;
+}
+.container-wrapper-5 .agility-card-wrapper .agility-card .amazon-card-wrapper .amazon-card-header:hover img:nth-child(2) {
+  animation: role 1s ease;
+}
+@keyframes role {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.container-wrapper-5 .agility-card-wrapper .agility-card .amazon-card-wrapper .amazon-card-footer {
+  color: #fff;
+  font-size: 24.5px;
+  z-index: 66;
+  transition: 0.3s ease;
+}
+.container-wrapper-5 .agility-card-wrapper .agility-card .amazon-card-wrapper .amazon-card-footer:hover {
+  margin-bottom: 0 0 20px 0;
+}
+.container-wrapper-5 .agility-card-wrapper .agility-card .amazon-card:hover .amazon-card-footer {
+  margin-bottom: 20px;
+  background: linear-gradient(to top red, red);
+}
+.container-wrapper-5 .agilty-nav {
+  height: 100px;
+  width: 992px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+@media screen and (max-width: 1080px) {
+  .container-wrapper-5 .agilty-nav {
+    width: 0;
+    justify-content: center;
+  }
+}
+.container-wrapper-5 .agilty-nav ul {
+  display: flex;
+}
+.container-wrapper-5 .agilty-nav ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 0 36px;
+}
+.container-wrapper-5 .agilty-nav ul li:nth-child(1) {
+  border-top: 1px solid black;
+}
+.container-wrapper-5 .agilty-nav ul li:nth-child(2) {
+  border-top: 1px solid orange;
+}
+.container-wrapper-5 .agilty-nav ul li:nth-child(3) {
+  border-top: 1px solid blueviolet;
+}
+.container-wrapper-5 .agilty-nav ul li:nth-child(4) {
+  border-top: 1px solid red;
+}
+.container-wrapper-5 .agilty-nav ul li img {
+  width: clamp(200px, 100%, 270px);
+}
+
+#maersk,
+#twilo,
+#bmw {
+  display: none;
+}
+
+#maresk-ico {
+  height: 40px;
+}
+
+#twilo-ico {
+  width: 100px;
+}
+
+#bmw-ico,
+#maresk-ico,
+#twilo-ico {
+  opacity: 0.3;
+}
+
+#bmw,
+#amazon,
+#maersk,
+#twilo {
+  transition: opacity 0.3s ease-in-out;
+}
+
+#twilo .amazon-card, #maersk .amazon-card, #amazon .amazon-card, #bmw .amazon-card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 24px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+#twilo .amazon-card::before, #maersk .amazon-card::before, #amazon .amazon-card::before, #bmw .amazon-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  z-index: 0;
+  transition: background-color 0.3s ease;
+}
+#twilo .amazon-card:hover::before, #maersk .amazon-card:hover::before, #amazon .amazon-card:hover::before, #bmw .amazon-card:hover::before {
+  background-color: rgba(2, 1, 1, 0.596);
+}
+
+#bmw .amazon-card {
+  background-image: url("../../../src/images/bmw-car.webp");
+}
+#bmw .amazon-card-header img:nth-child(1) {
+  width: 40px;
+  height: 40px;
+}
+
+#amazon .amazon-card {
+  background-image: url("../../../src/images/amazon-company.jpg");
+}
+#amazon .amazon-card:hover::before {
+  background-color: rgba(2, 1, 1, 0.596);
+}
+
+#maersk .amazon-card {
+  background-image: url("../../../src/images/maersk.webp");
+}
+#maersk .amazon-card:hover::before {
+  background-color: rgba(2, 1, 1, 0.596);
+}
+
+#twilo .amazon-card {
+  background-image: url("../../../src/images/twilio.webp");
+}
+#twilo .amazon-card:hover::before {
+  background-color: rgba(2, 1, 1, 0.596);
+}
+
+@media screen and (max-width: 1080px) {
+  .agility-card {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .agility-wrapper {
+    padding: 0 32px;
+    margin: 73px 0;
+  }
+  .agility-card-wrapper {
+    flex-wrap: wrap;
+  }
+  .agility-card-content {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .agilty-nav ul li:active {
+    border-top: black;
+  }
+  .agilty-nav {
+    width: clamp(347px, 100%, 736px);
+    justify-content: center;
+    height: 10px;
+  }
+  .amazon-card {
+    width: clamp(347px, 100%, 980px);
+    margin: auto;
+  }
+  .agility-card-content-item p {
+    padding: 0;
+  }
+  .agilty-nav ul li:nth-child(4) {
+    height: 10px;
+    width: 24px;
+  }
+  #bmw-ico,
+  #amazon-ico,
+  #maresk-ico,
+  #twilo-ico {
+    opacity: 0;
+  }
+  .agilty-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  .agilty-nav ul li {
+    display: flex;
+    align-items: flex-start;
+    width: 30px;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .agilty-nav ul li img {
+    width: 100px;
+    position: absolute;
+    top: -15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .amazon-card {
+    width: clamp(347px, 100%, 736px);
+  }
+  .agility-card-content-item h3 {
+    font-size: 14px;
+  }
+  .agility-card-content-item span {
+    font-size: 13px;
+  }
+  .amazon-card-footer {
+    width: clamp(282px, 100%, 405px);
+  }
+  .agility-card-content-item p {
+    font-size: 10px;
+  }
+}
 .container-wrapper-6 {
   padding: 14px;
   margin: 128px 0;
@@ -2111,6 +2434,7 @@ input {
   color: #0a2540;
   font-size: 18px;
 }
+
 .payment-container {
   display: flex;
   flex-direction: column;
@@ -2128,7 +2452,6 @@ input {
   height: 80px;
   transition: transform 0.3s ease;
 }
-
 .payment-container .product-image:hover {
   transform: scale(1.1);
 }
@@ -2148,7 +2471,6 @@ input {
   color: #999;
   font-size: 10px;
 }
-
 .payment-container form .user-details {
   display: flex;
   flex-direction: column;
@@ -2243,7 +2565,6 @@ input {
   width: 100%;
   transition: all 0.3s ease;
 }
-
 .payment-container form .user-details .pay-button:hover {
   background: #082136;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
