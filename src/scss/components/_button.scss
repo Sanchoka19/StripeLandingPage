@@ -1,0 +1,57 @@
+@import "./variables";
+
+.universal-button {
+    color: $button-color;
+    background-color: $button-bg;
+    padding: 5px 0 5px 16px;
+    display: flex;
+    border-radius: 16.5px;
+    width: 140px;
+    font-size: 13.95px;
+    gap: 10px;
+    transition: .3s ease;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.26);
+    }
+
+
+    img {
+        margin: 2px 0 0 5px;
+        transition: .3s ease;
+    }
+
+    &:hover img {
+        transform: translateX(4px);
+    }
+}
+
+.mobile-button {
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background: #0A2540;
+    padding: 10px 0;
+    width: 100%;
+}
+
+
+.read-more {
+    display: flex;
+    align-items: center;
+    color: $secondary-color;
+    gap: 5px;
+    padding: 3px 0 6px 0;
+    font-size: 13.71px;
+    cursor: pointer;
+
+    img {
+        transition: 0.3s ease;
+        margin-top: 2px;
+    }
+
+    &:hover img {
+        transform: translateX(5px);
+    }
+}

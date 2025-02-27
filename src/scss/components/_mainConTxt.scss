@@ -1,0 +1,37 @@
+@import "./variables";
+
+.main-con-main-title {
+    font-size: 32.14px;
+    font-weight: 700;
+    line-height: 48px;
+    color: $primarybg-color;
+}
+
+.main-con-title {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    gap: 10px;
+    color: #2E3A55;
+}
+
+.main-con-content-desc {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    color: $lightTextColor;
+}
+
+.main-con-footer-link {
+    font-size: 14px;
+    color: $linkColor;
+}
+
+.main-con-footer-color {
+    color: $lightTextColor;
+}
+
+.main-con-seealso {
+    color: $primarybg-color;
+    font-size: 18px;
+}

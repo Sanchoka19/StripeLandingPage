@@ -1,0 +1,96 @@
+@import "../components/variables";
+
+.container-10 {
+    .container-wrapper-10 {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 120px 0 73px 0;
+        padding: 16px;
+
+        .footer-logo {
+            width: 200px;
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            color: $primarybg-color;
+
+            @media screen and (max-width: 768px) {
+                .footer-logo {
+                    width: 347px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            span {
+                font-size: 14px;
+                padding-left: 10px;
+            }
+
+            .united-icon {
+                position: relative;
+
+                img {
+                    position: absolute;
+                    left: 0;
+                    top: 1px;
+                }
+            }
+
+            .footer-bottom {
+                text-align: center;
+                margin-top: 20px;
+                color: $copyrightColor;
+                font-size: 13.71px;
+            }
+        }
+
+        #phone-number {
+            color: $linkColor;
+        }
+
+        .footer-links {
+            display: flex;
+            flex: 3;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-column {
+            flex: 1;
+            width: clamp(168px, 100%, 270px);
+            padding: 0 16px;
+            border-left: 2px dashed rgba(128, 128, 128, 0.377);
+
+            h3 {
+                font-size: 13.59px;
+                margin-bottom: 10px;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    margin-bottom: 8px;
+
+                    a {
+                        text-decoration: none;
+                        color: $primarybg-color;
+                        transition: $normTransition;
+                        font-size: 14px;
+
+                        &:hover {
+                            color: #0a254042;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

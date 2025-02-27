@@ -1,0 +1,187 @@
+@import "../components/variables";
+
+.container-9 {
+    padding: 128px 0 287px 0;
+    background: $maincon-bg;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+
+    @media screen and (max-width: 1024px) {
+        clip-path: polygon(0 0, 100% 0, 270% 70%, 0% 100%);
+    }
+
+    @media screen and (max-width: 768px) {
+        clip-path: polygon(0 0, 100% 0, 530% 70%, 0% 100%);
+    }
+
+    .container-wrapper-9 {
+        gap: 112px;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .ready-conteiner-explore {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+            color: $primarybg-color;
+            padding: 0 16px 16px 16px;
+            width: clamp(315px, 100%, 412px);
+
+            @media screen and (max-width: 1024px) {
+                align-self: flex-start;
+            }
+
+            p a {
+                color: $linkColor;
+                text-decoration: none;
+            }
+
+            .ready-conteiner-button {
+                display: flex;
+                gap: 16px;
+                align-items: center;
+            }
+        }
+
+        .ready-conteiner-card-wrapper {
+            width: 540px;
+            height: 177px;
+            display: flex;
+
+            @media screen and (max-width: 768px) {
+                flex-wrap: wrap;
+            }
+
+            .ready-conteiner-pricing {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                padding: 0 0 0 16px;
+                font-size: 13px;
+
+                h4 {
+                    color: $maincon-bg;
+                    border-left: $linkColor;
+                }
+
+                p {
+                    width: 187px;
+                    color: #425466;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+    .rectagle {
+        position: absolute;
+        height: 72px;
+        width: 104%;
+        bottom: 55px;
+        z-index: 10;
+        rotate: -5deg;
+        display: flex;
+        justify-content: space-between;
+
+        .left-rectangle {
+            position: relative;
+            height: 90px;
+
+            &-purple {
+                width: 490.19px;
+                background-color: #7a73fe92;
+                height: 40px;
+                z-index: 1000;
+                position: absolute;
+            }
+
+            &-blue {
+                position: absolute;
+                top: -31px;
+                left: 271px;
+                z-index: 22;
+                width: 160.88px;
+                height: 40px;
+                background: #7feaffbc;
+            }
+        }
+
+
+        .right-rectangle {
+            position: absolute;
+            width: 490.19px;
+            height: 80px;
+            z-index: 200;
+            right: 0;
+
+            &-purple {
+                background: #7a73fe92;
+                position: absolute;
+                height: 40px;
+                z-index: 201;
+                width: 160.88px;
+                right: 247px;
+            }
+
+            &-blue {
+                background: #7feaffbc;
+                position: absolute;
+                width: 490.19px;
+                height: 40px;
+                z-index: 200;
+                top: -32px;
+                left: 30px;
+            }
+        }
+
+        @media screen and (max-width: 1440px) {
+            rotate: -9deg;
+            bottom: 55px;
+
+            .left-rectangle-purple {
+                left: -220px;
+            }
+
+            .left-rectangle-blue {
+                left: 85px;
+            }
+
+            .right-rectangle-purple {
+                right: 100px;
+            }
+
+            .right-rectangle-blue {
+                left: 200px;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            rotate: -6deg;
+            bottom: -5px;
+
+            .left-rectangle-purple {
+                left: -430px;
+            }
+
+            .left-rectangle-blue {
+                left: -117px;
+            }
+
+            .right-rectangle-purple {
+                right: -117px;
+            }
+
+            .right-rectangle-blue {
+                left: 417px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            rotate: -5deg;
+        }
+
+        @media screen and (max-width: 390px) {
+            rotate: -8deg;
+        }
+    }
+}

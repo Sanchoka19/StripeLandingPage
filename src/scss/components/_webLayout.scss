@@ -1,0 +1,15 @@
+@mixin flexibleBox($vertical, $hosrisontal) {
+    display: flex;
+    justify-content: $vertical;
+    align-items: $hosrisontal;
+}
+
+@mixin gridableBox($col) {
+    display: grid;
+    grid-template-columns: $col;
+}
+
+@mixin centerVerticly() {
+    display: flex;
+    justify-content: center;
+}
