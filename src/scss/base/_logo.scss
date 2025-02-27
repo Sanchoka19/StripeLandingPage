@@ -1,0 +1,43 @@
+.container-wrapper-2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 60px;
+    margin-bottom: 72px;
+
+    .logo-compani-conteiner {
+        display: flex;
+
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+            gap: 70px;
+        }
+
+        .logo-grid {
+            display: flex;
+            gap: 70px;
+            width: clamp(347px, 100%, 540px);
+
+            @media screen and (max-width: 1080px) {
+                gap: 48px;
+            }
+
+            @media screen and (max-width: 768px) {
+                gap: clamp(5px, 100%, 24px);
+            }
+
+            img {
+                width: 200px;
+                height: 40px;
+
+                @media screen and (max-width: 1080px) {
+                    width: 160px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./fonts/Inter-VariableFont_opsz,wght.ttf");
+}
+
+html {
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+}
+
+button,
+li,
+a {
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    overflow: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input {
+    outline: none;
+}
+
+$container-wrapper: clamp(390px, 100%, 1080px);
+
+@mixin universalCon() {
+    width: $container-wrapper;
+    display: flex;
+    border-left: 2px dashed rgba(128, 128, 128, 0.377);
+    border-right: 2px dashed rgba(128, 128, 128, 0.377);
+}
+
+@for $i from 1 through 10 {
+    .container-wrapper-#{$i} {
+        @include universalCon();
+    }
+}
+
+@for $i from 1 through 10 {
+    .container-#{$i} {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+    }
+}
+
+@for $i from 1 through 4 {
+    .main-container-left-item-#{$i} {
+        padding: 0 0 0 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 62px;
+        align-items: flex-start;
+
+        .main-container-left-item-heder {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+}
+
+@for $i from 1 through 5 {
+    .main-container-right-item-#{$i} {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+}
+
+@import "./import";

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/style.css">
     <link rel="icon" type="image/x-icon" href="../src/images/web.png">
 
     <title>Stripe - Secure Online Payments</title>
@@ -21,9 +22,9 @@
 <body>
 
     <!-- herro container -->
-    <section class="hero-container">
+    <section class="container-1">
         <iframe src="https://wave-gradient.netlify.app/" frameborder="0" class="polygon"></iframe>
-        <div class="hero-container-wrapper">
+        <div class="container-wrapper-1">
             <header>
                 <div class="header-company-holder">
                     <img loading="lazy" src="../assets/icons/company-name.svg" alt="company-name">
@@ -77,7 +78,7 @@
                     <span class="product-title">Abstraction Magazine</span>
                     <span class="product-price">$19 per month</span>
 
-                    <button class="payment-button apple-pay"><img loading="lazy" src="../src/images/pay.png"
+                    <button class="mobile-button apple-pay"><img loading="lazy" src="../src/images/pay.png"
                             alt=""></button>
 
                     <span class="divider">Or pay another way</span>
@@ -122,8 +123,8 @@
 
 
     <!-- logo container -->
-    <section class="logo">
-        <div class="logo-wrapper">
+    <section class="container-2">
+        <div class="container-wrapper-2">
             <div class="logo-compani-conteiner">
                 <div class="logo-grid">
                     <img loading="lazy" src="../src/images/amazon.svg" alt="Amazon">
@@ -151,16 +152,16 @@
 
     <!-- main-container -->
 
-    <section class="main-container">
-        <div class="main-container-wrapper">
+    <section class="container-3">
+        <div class="container-wrapper-3">
             <div class="main-container-content">
                 <div class="main-container-item">
-                    <div class="text-section">
-                        <p class="subtitle">Modular solutions</p>
-                        <h1 class="title">
+                    <div class="main-container-left-item-heder">
+                        <p class="main-con-title">Modular solutions</p>
+                        <h1 class="main-con-main-title">
                             A fully integrated <br> suite of financial <br> and payments <br> products
                         </h1>
-                        <p class="description">
+                        <p class="main-con-content-desc">
                             Reduce costs, grow revenue, and run your business more efficiently on a fully integrated
                             platform.
                             Use Stripe to handle all of your payments-related needs, manage revenue operations, and
@@ -171,7 +172,7 @@
                 </div>
 
                 <!--  mastercards conteiner 1-->
-                <div class="main-container-item">
+                <div class="main-container-right-item-1">
                     <!-- Sim Chip 1 -->
                     <div class="card">
                         <div class="sim-img">
@@ -207,7 +208,7 @@
 
                     <!-- Sim Chip 3 -->
                     <div class="card3">
-                        <img loading="lazy" src="../src/images/linear-green.svg" alt="" class="linear-green-img">
+                        <img loading="lazy" src="../src/images/linear-green.svg" alt="" class="linear-green-img1">
                         <img loading="lazy" src="../src/images/linear-green.svg" alt="" class="linear-green-img2">
                         <img loading="lazy" src="../src/images/linear-green.svg" alt="" class="linear-green-img3">
                         <img loading="lazy" src="../src/images/linear-green.svg" alt="" class="linear-green-img4">
@@ -228,33 +229,36 @@
 
             <!-- payments conteiner -->
             <div class="main-container-content">
-                <div class="main-container-item">
-                    <div class="main-container-payment-heder">
-                        <span><img loading="lazy" src="../assets/icons/payment.svg" alt="payments">payments</span>
-                        <h3>Accept and optimize
-                            payments, globally</h3>
-                        <p>Increase authorization rates, optimize your checkout
+                <div class="main-container-left-item-1">
+                    <div class="main-container-left-item-heder">
+                        <span class="main-con-title"><img loading="lazy" src="../assets/icons/payment.svg"
+                                alt="payments">payments</span>
+                        <h5 class="main-con-main-title">Accept and optimize
+                            payments, globally</h5>
+                        <p class="main-con-content-desc">Increase authorization rates, optimize your checkout
                             conversion, and offer local payment methods in every
                             market.</p>
                         <button class="universal-button">Start with Payments <img loading="lazy"
                                 src="../assets/icons/arrow.svg" alt="arrow"></button>
                     </div>
                     <div class="main-container-payment-footer">
-                        <h4>see also</h4>
-                        <p> <a href="#">Tax</a> for automating sales tax and VAT <br> <a href="#">Radar</a> for fraud
-                            prevention and management <br> <a href="#">Terminal</a> for
-                            custom in-person payments</p>
+                        <h6 class="main-con-seealso">see also</h6>
+                        <p class="main-con-footer-color">
+                            <a href="#" class="main-con-footer-link">Tax</a> for automating sales tax and VAT <br>
+                            <a href="#" class="main-con-footer-link">Radar</a> for fraud prevention and management <br>
+                            <a href="#" class="main-con-footer-link">Terminal</a> for custom in-person payments
+                        </p>
                     </div>
                 </div>
-                <div class="main-container-item ">
+                <div class="main-container-right-item-2">
                     <div class="payment-container">
                         <img loading="lazy" src="../src/images/chair.png" alt="Wood Chair" class="product-image">
                         <span class="product-title">Wood Chair 001</span>
                         <span class="product-price">$149</span>
 
-                        <button class="payment-button apple-pay"><img loading="lazy" src="../src/images/pay.png"
+                        <button class="mobile-button apple-pay"><img loading="lazy" src="../src/images/pay.png"
                                 alt=""></button>
-                        <button class="payment-button link-pay">Link Pay Faster</button>
+                        <button class="mobile-button link-pay">Link Pay Faster</button>
 
                         <span class="divider">Or pay another way</span>
 
@@ -296,30 +300,33 @@
 
             <!-- biling container -->
             <div class="main-container-content">
-                <div class="main-container-item">
-                    <div class="main-container-billing-heder">
-                        <span><img loading="lazy" src="../assets/icons/billing.svg" alt="">Billing </span>
-                        <h5>Capture recurring revenue</h5>
-                        <p>Support recurring business models, minimize churn,
+                <div class="main-container-left-item-2">
+                    <div class="main-container-left-item-heder">
+                        <span class="main-con-title"><img loading="lazy" src="../assets/icons/billing.svg"
+                                alt="">Billing </span>
+                        <h5 class="main-con-main-title">Capture recurring revenue</h5>
+                        <p class="main-con-content-desc">Support recurring business models, minimize churn,
                             and automate finance operations.</p>
                         <button class="universal-button">Start with Billing<img loading="lazy"
                                 src="../assets/icons/arrow.svg" alt="arrow"> </button>
                     </div>
                     <div class="main-container-billing-footer">
-                        <h6>See also</h6>
-                        <p> <a href="#">Invoicing</a> for invoice creation, collection, and tracking <br>
-                            <a href="#">Revenue Recognition</a> for streamlined accrual accounting <br> <a
-                                href="#">Sigma</a> for custom revenue
-                            reports
+                        <h6 class="main-con-seealso">See also</h6>
+                        <p class="main-con-footer-color">
+                            <a href="#" class="main-con-footer-link">Invoicing</a> for invoice creation, collection, and
+                            tracking <br>
+                            <a href="#" class="main-con-footer-link">Revenue Recognition</a> for streamlined accrual
+                            accounting <br>
+                            <a href="#" class="main-con-footer-link">Sigma</a> for custom revenue reports
                         </p>
                     </div>
                 </div>
 
                 <!-- pricing container -->
 
-                <div class="main-container-item">
+                <div class="main-container-right-item-3">
                     <div class="pricing-container">
-                        <div class="pricing-conatiner-header">
+                        <div class="pricing-container-header">
                             <div class="logo">
                                 <img loading="lazy" class="logo-icon" src="../assets/icons/quantum.svg">
                                 <span class="logo-text">Quantum</span>
@@ -378,49 +385,56 @@
             <!-- connect container -->
 
             <div class="main-container-content">
-                <div class="main-container-item">
-                    <div class="main-container-connect-heder">
-                        <span><img loading="lazy" src="../assets/icons/connect.svg" alt="connect">Connect</span>
-                        <h5>Set up multiparty
+                <div class="main-container-left-item-3">
+                    <div class="main-container-left-item-heder">
+                        <span class="main-con-title"><img loading="lazy" src="../assets/icons/connect.svg"
+                                alt="connect">Connect</span>
+                        <h5 class="main-con-main-title">Set up multiparty
                             payments and payouts</h5>
-                        <p>Integrate payments into your platform or marketplace
+                        <p class="main-con-content-desc">Integrate payments into your platform or marketplace
                             for end-to-end payments experiences.</p>
                         <button class="universal-button">Start with Connect <img loading="lazy"
                                 src="../assets/icons/arrow.svg" alt="arrow"> </button>
                     </div>
 
                     <div class="main-container-connect-footer">
-                        <h6>see also</h6>
-                        <p><a href="#">Terminal</a> for custom in-person payment <br> <a href="#">Instant Payouts</a>
-                            for fast payments to users <br> <a href="#">Payment Elements </a> for customizable UIs</p>
+                        <h6 class="main-con-seealso">see also</h6>
+                        <p>
+                            <a href="#" class="main-con-footer-link">Terminal</a> for custom in-person payment <br>
+                            <a href="#" class="main-con-footer-link">Instant Payouts</a> for fast payments to users <br>
+                            <a href="#" class="main-con-footer-link">Payment Elements </a> for customizable UIs
+                        </p>
                     </div>
                 </div>
-                <div class="main-container-item">
+                <div class="main-container-right-item-4">
                     <img loading="lazy" src="../src/images/egg.png" alt="egg">
                 </div>
             </div>
 
             <!--  Issuing container -->
             <div class="main-container-content">
-                <div class="main-container-item">
-                    <div class="main-container-issuing-heder">
-                        <span><img loading="lazy" src="../assets/icons/billing.svg" alt="">Issuing </span>
-                        <h5>Build a fintech offering with banking-as-a-service</h5>
-                        <p>Launch, manage, and scale a commercial card
+                <div class="main-container-left-item-4">
+                    <div class="main-container-left-item-heder">
+                        <span class="main-con-title"><img loading="lazy" src="../assets/icons/billing.svg"
+                                alt="">Issuing </span>
+                        <h5 class="main-con-main-title">Build a fintech offering with banking-as-a-service</h5>
+                        <p class="main-con-content-desc">Launch, manage, and scale a commercial card
                             program without any setup fees.</p>
-                        <button class="universal-button">Start with Issuing <img loading="lazy"
+                        <button class="universal-button">Start with Issuing<img loading="lazy"
                                 src="../assets/icons/arrow.svg" alt="arrow"> </button>
                     </div>
                     <div class="main-container-issuing-footer">
-                        <h6>See also</h6>
-                        <p> <a href="#">Treasury</a> for financial accounts <br>
-                            <a href="#">Capital</a> for offering fast, flexible financing <br> <a href="#">Connect</a>
-                            for powering platform payments
+                        <h6 class="main-con-seealso">See also</h6>
+                        <p class="main-con-footer-color">
+                            <a href="#" class="main-con-footer-link">Treasury</a> for financial accounts <br>
+                            <a href="#" class="main-con-footer-link">Capital</a> for offering fast, flexible
+                            financing<br>
+                            <a href="#" class="main-con-footer-link">Connect</a> for powering platform payments
                         </p>
                     </div>
                 </div>
                 <!--  mastercards conteiner 2 -->
-                <div class="main-container-item">
+                <div class="main-container-right-item-5">
                     <!-- Sim Chip 1 -->
                     <div class="card">
                         <div class="sim-img">
@@ -480,10 +494,10 @@
 
     <!-- globe container -->
 
-    <section class="globe-container">
+    <section class="container-4">
         <div class="linear-border"></div>
         <div class="globe-content">
-            <div class="globe-content-wrapper">
+            <div class="container-wrapper-4">
                 <div class="global-comrce-content">
                     <h6>Global scale</h6>
                     <h2>The backbone for global commerce</h2>
@@ -493,7 +507,7 @@
                         businesses of all sizes.</p>
                 </div>
                 <div class="globe-footer">
-                    <div class="saba">
+                    <div class="globe-footer-uniter">
                         <div class="global-comrce-footer">
                             <h4>250M+</h4>
                             <p>API requests per day, peaking at 13,000 requests a second.</p>
@@ -503,7 +517,7 @@
                             <p>Historical uptime for <span class="strype-serivce">Stripe <br> Services.</span></p>
                         </div>
                     </div>
-                    <div class="saba">
+                    <div class="globe-footer-uniter">
                         <div class="global-comrce-footer">
                             <h4>90%</h4>
                             <p>of U.S. adults have bought from businesses using Stripe.</p>
@@ -524,8 +538,8 @@
 
     <!-- agilty container -->
 
-    <section class="agility">
-        <div class="agility-wrapper">
+    <section class="container-5">
+        <div class="container-wrapper-5">
             <div class="agility-title">
                 <h6>Enterprise reinvention</h6>
                 <h3>Bring agility to your enterprise</h3>
@@ -672,8 +686,8 @@
 
     <!-- startup-container -->
 
-    <section class="startup-container">
-        <div class="startup-container-wrapper">
+    <section class="container-6">
+        <div class="container-wrapper-6">
             <span>Built for growth</span>
             <h2>Take your startup farther, faster</h2>
             <p>Startups build on Stripe to launch faster, adapt as they grow, and automate workflows to do more with
@@ -738,8 +752,8 @@
 
 
     <!-- developer container -->
-    <section class="developer-container">
-        <div class="developer-container-wrapper">
+    <section class="container-7">
+        <div class="container-wrapper-7">
             <div class="developer-container-header">
                 <div class="developer-container-header-card">
                     <h4>Designed for developers</h4>
@@ -775,7 +789,7 @@
                     <p>We offer client and server
                         libraries in everything from
                         React and PHP to .NET and iOS.</p>
-                    <span>See libraries<img loading="lazy" src="../assets/icons/purple-arrow.svg"
+                    <span class="read-more">See libraries<img loading="lazy" src="../assets/icons/purple-arrow.svg"
                             alt="purple-arrow"></span>
                 </div>
 
@@ -788,7 +802,7 @@
                     <p>Customize and deploy
                         payments interfaces directly
                         from the Stripe Dashboard.</p>
-                    <span>Explore no-code<img loading="lazy" src="../assets/icons/purple-arrow.svg"
+                    <span class="read-more">Explore no-code<img loading="lazy" src="../assets/icons/purple-arrow.svg"
                             alt="purple-arrow"></span>
                 </div>
 
@@ -801,8 +815,8 @@
                     <p>Connect Stripe to over a
                         hundred tools including Adobe,
                         Salesforce, and Xero.</p>
-                    <span>Browse App Marketplace <img loading="lazy" src="../assets/icons/purple-arrow.svg"
-                            alt="purple-arrow"></span>
+                    <span class="read-more">Browse App Marketplace <img loading="lazy"
+                            src="../assets/icons/purple-arrow.svg" alt="purple-arrow"></span>
                 </div>
 
                 <div class="developer-container-footer-card">
@@ -814,7 +828,7 @@
                     <p>Create an app just for your team
                         or for the millions of businesses
                         on Stripe.</p>
-                    <span>Learn about Apps <img loading="lazy" src="../assets/icons/purple-arrow.svg"
+                    <span class="read-more">Learn about Apps <img loading="lazy" src="../assets/icons/purple-arrow.svg"
                             alt="purple-arrow"></span>
                 </div>
             </div>
@@ -823,9 +837,8 @@
 
 
     <!-- platform container -->
-    <!-- Launch with ease -->
-    <section class="platform-container">
-        <div class="platform-wrapper">
+    <section class="container-8">
+        <div class="container-wrapper-8">
             <div class="platform-header">
                 <div class="ease-container">
                     <a href="#" class="launch-with-ease">Launch with ease</a>
@@ -905,8 +918,8 @@
     </section>
 
     <!-- ready container -->
-    <section class="ready-conteiner">
-        <div class="ready-conteiner-wrapper">
+    <section class="container-9">
+        <div class="container-wrapper-9">
             <div class="ready-conteiner-explore">
                 <h3>Ready to get started?</h3>
                 <p>Explore <a href="#">Stripe Payments,</a> or create an account
@@ -914,8 +927,10 @@
                     also contact us to design a custom package for
                     your business.</p>
                 <div class="ready-conteiner-button">
-                    <button class="universal-button">Start now <i class="arrow-right">&#8594</i></button>
-                    <span>Contact sale <i class="arrow-right">&#8594</i></span>
+                    <button class="universal-button">contact-sale <img loading="lazy" src="../assets/icons/arrow.svg"
+                            alt="arrow"></button>
+                    <button class="read-more">Contact sale <img loading="lazy" src="../assets/icons/purple-arrow.svg"
+                            alt="arrow"></button>
                 </div>
             </div>
             <div class="ready-conteiner-card-wrapper">
@@ -927,7 +942,8 @@
                     <h4>Always know what you pay</h4>
                     <p>Integrated per-transaction
                         pricing with no hidden fees.</p>
-                    <span>Pricing details <i class="arrow-right">&#8594</i></span>
+                    <span class="read-more">Pricing details <img src="../assets/icons/purple-arrow.svg"
+                            alt="arrow"></span>
                 </div>
                 <div class="ready-conteiner-pricing">
                     <div class="ready-conteiner-pricing-img">
@@ -937,7 +953,8 @@
                     <h4>Always know what you pay</h4>
                     <p>Integrated per-transaction
                         pricing with no hidden fees.</p>
-                    <span>Pricing details <i class="arrow-right">&#8594</i></span>
+                    <span class="read-more">Pricing details <img src="../assets/icons/purple-arrow.svg"
+                            alt="arrow"></span>
                 </div>
             </div>
         </div>
@@ -955,8 +972,8 @@
 
 
     <!-- footer container -->
-    <footer>
-        <div class="footer-container">
+    <footer class="container-10">
+        <div class="container-wrapper-10">
             <div class="footer-logo">
                 <div>
                     <h2>stripe</h2>

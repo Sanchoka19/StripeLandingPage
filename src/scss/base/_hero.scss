@@ -1,0 +1,417 @@
+@import "../components/variables";
+
+.polygon {
+    height: 650px;
+    width: 100vw;
+    background: $polygon-bg;
+    position: absolute;
+    background-size: 200% 200%;
+    clip-path: polygon(0% 0%, 0% 100%, 480% 0%);
+    z-index: 1;
+    top: -70px;
+    overflow: hidden;
+
+    @media screen and (max-width: 1440px) {
+        clip-path: polygon(0% 0%, 0% 97%, 210% 0%);
+    }
+
+    @media screen and (max-width: 1024px) {
+        clip-path: polygon(0% 0%, 0% 90%, 292% 0%);
+    }
+
+    @media screen and (max-width: 768px) {
+        clip-path: polygon(0% 0%, 0% 88%, 480% 0%);
+    }
+
+    @media screen and (max-width:390px) {
+        clip-path: polygon(0% 0%, 0% 69%, 480% 0%);
+    }
+}
+
+.container-wrapper-1 {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+    header {
+        font-family: Inter;
+        display: flex;
+        align-items: center;
+        padding: 12px 16px 12px 12px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 7;
+        width: $container-wrapper;
+        justify-content: space-between;
+        margin-top: 25px;
+
+        @media screen and (max-width: 1024px) {
+            .contact-sales-btn {
+                display: none;
+            }
+
+            .header-company-holder {
+                width: clamp(379px, 100%, 1024px);
+                display: flex;
+                justify-content: space-between;
+                padding: 0 10px;
+            }
+
+            .header-company-holder img {
+                width: 59.7px;
+                position: fixed;
+            }
+
+            .contact-sales button {
+                display: none;
+            }
+
+            .navlist {
+                display: none;
+                flex-direction: column;
+                background-color: rgb(48, 38, 38);
+                width: 103vw;
+                height: 100vh;
+                transition: 4s ease;
+            }
+
+            .navlist.active {
+                position: fixed;
+                z-index: -1;
+                display: flex;
+                right: -2px;
+                top: -40px;
+            }
+
+            .nav-list li a {
+                color: #fff;
+                font-size: 20px;
+            }
+
+            .menu-icon {
+                cursor: pointer;
+                position: fixed;
+                background-color: #ffffff8b;
+                padding: 20px;
+                border-radius: 15px;
+                right: 15px;
+            }
+
+            .menu-icon span {
+                background-color: #fff;
+                height: 2px;
+                position: absolute;
+                width: 50%;
+                left: 0;
+                transition: all $normTransition;
+                transform: translateX(-50%);
+                left: 50%;
+                border-radius: 4px;
+            }
+
+            .menu-icon span:first-child {
+                top: 15px;
+            }
+
+            .menu-icon span:last-child {
+                bottom: 13px;
+            }
+
+            .menu-icon.active span:first-child {
+                transform: rotate(45deg);
+                top: 50%;
+            }
+
+            .menu-icon.active span:last-child {
+                transform: rotate(-45deg);
+                bottom: 50%;
+            }
+
+            .menu-icon span:nth-child(2) {
+                opacity: 1;
+            }
+
+            .menu-icon.active span:nth-child(2) {
+                opacity: 0;
+                z-index: 1;
+            }
+
+            .menu-icon.active {
+                z-index: 1;
+                background-color: transparent;
+            }
+        }
+
+        .header-company-holder {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 14.18px;
+            font-weight: 500;
+            gap: 10px;
+
+            a {
+                transition: $normTransition;
+                color: $navlist-color;
+
+                &:hover {
+                    color: $button-hover;
+                }
+            }
+        }
+
+        .contact-sales {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            justify-content: flex-end;
+
+            &-holder {
+                display: flex;
+                align-items: center;
+                position: relative;
+                font-size: 13.95px;
+                width: 90px;
+                justify-content: flex-end;
+
+                @media screen and (max-width: 1024px) {
+                    display: none;
+                }
+
+                img {
+                    position: absolute;
+                    right: -17px;
+                    top: 4px;
+                    transition: $normTransition;
+
+                    &:hover img {
+                        transform: translateX(5px);
+                    }
+                }
+            }
+
+            a {
+                color: #fff;
+            }
+
+            button {
+                padding: 7px 23px 6px 16px;
+                color: #e18538;
+                background: #fff;
+                width: 110px;
+
+                &:hover {
+                    background-color: $button-hover;
+                }
+
+                img {
+                    transition: $normTransition;
+                }
+
+                &:hover img {
+                    transform: translateX(4px);
+                }
+            }
+        }
+    }
+
+    .financial {
+        z-index: 4;
+        margin: 165px 0 175px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: $gap-small 0 $gap-small 16px;
+        width: clamp(300px, 100%, 550px);
+
+        .contact-sales-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            .contact-btn {
+                background-color: $primarybg-color;
+                padding-left: 16px;
+                display: flex;
+                align-items: center;
+                border-radius: 15.5px;
+                width: 111px;
+                height: 33px;
+                position: relative;
+                transition: $normTransition;
+
+                &:hover {
+                    background-color: rgba(128, 128, 128, 0.693);
+                }
+
+                button {
+                    background-color: transparent;
+                    border: none;
+                    color: #fff;
+                    font-size: 13px;
+                    line-height: 24px;
+                    font-weight: 500;
+                }
+
+                img {
+                    position: absolute;
+                    top: 13px;
+                    right: 17px;
+                    transition: $normTransition;
+                }
+
+                &:hover img {
+                    transform: translateX(5px);
+                }
+
+            }
+
+            .contact-sales-btn {
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                h4 {
+                    color: $primarybg-color;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+
+                img {
+                    position: fixed;
+                    top: 7px;
+                    right: -12px;
+                }
+            }
+        }
+
+        h3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 280px;
+            font-size: 10px;
+            background-color: rgba(0, 0, 0, 0.407);
+            color: $navlist-color;
+            padding: 5px 10px;
+            border-radius: 30px;
+
+            .financial h3 img {
+                margin-left: 5px;
+                transition: $normTransition;
+            }
+
+            h3:hover img {
+                transform: translateX(5px);
+            }
+        }
+
+        h2 {
+            color: $primarybg-color;
+            font-weight: 700;
+            font-size: 83px;
+            width: 100%;
+            line-height: 90.76px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 53.02px;
+                width: 384px;
+            }
+
+            @media screen and (max-width:390px) {
+                font-size: 43.02px;
+                line-height: 53.94px;
+                font-weight: 500;
+            }
+        }
+
+        p {
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 28px;
+            color: $text-light;
+
+            @media screen and (max-width: 768px) {
+                width: 304px;
+            }
+        }
+    }
+
+    .chart-container {
+        @media screen and (max-width:390px) {
+            display: none;
+        }
+
+        .chart-images {
+            position: absolute;
+            overflow: hidden;
+            z-index: 3;
+            left: 710px;
+            top: 80px;
+        }
+
+        .payment-container {
+            position: absolute;
+            left: 670px;
+            top: 170px;
+            z-index: 5;
+
+            width: 270px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            box-shadow: 0px 5px 50px rgba(10, 37, 64, 0.5);
+            background: $white-txt-color;
+            color: rgba(10, 37, 64, 1);
+            padding: 24px 16px 28px 16px;
+            border-radius: 45px;
+
+            .product-image {
+                height: 70px;
+            }
+
+            .product-title {
+                margin: 10px;
+            }
+
+            .apple-pay {
+                margin: 0 0 10px 0;
+            }
+
+            .user-details {
+                .input-box {
+                    input {
+                        padding: 5px;
+                    }
+
+                    label {
+                        margin-bottom: 2px;
+                    }
+
+                    .visa-ph {
+                        top: 21px;
+                    }
+
+                    .visa-p {
+                        top: 8px;
+
+                    }
+
+                    .chart-container .trans {
+                        top: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
