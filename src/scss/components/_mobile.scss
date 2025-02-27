@@ -1,180 +1,160 @@
-.main-container .payment-container {
-    background: #fff;
-    border-radius: 45px;
-    width: 303px;
-    padding: 24px 16px 28px 16px;
+@import "../components/variables";
+
+.payment-container {
     display: flex;
     flex-direction: column;
-    color: rgba(10, 37, 64, 1);
     align-items: center;
+    padding: 24px 16px 28px 16px;
+    border-radius: 45px;
+    background: #fff;
+    width: 303px;
+    color: $primarybg-color;
     box-shadow: 0px 5px 50px rgba(10, 37, 64, 0.5);
-    animation: shake .5s ease infinite;
-}
+    animation: shake $normTransition infinite;
 
+    .product-image {
+        width: 72px;
+        height: 80px;
+        transition: transform $normTransition;
 
-.product-image {
-    width: 72px;
-    height: 80px;
-    transition: transform 0.3s ease;
-}
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 
-.product-image:hover {
-    transform: scale(1.1);
-}
+    .product-title {
+        font-size: 10.14px;
+        margin: 15px 0 4px 0;
+    }
 
+    .product-price {
+        font-size: 12px;
+        margin-bottom: 24px;
+    }
 
-.product-title {
-    font-size: 10.14px;
-    margin: 15px 0 4px 0;
-}
+    .apple-pay {
+        margin: 18px 0 16px 0;
+    }
 
-.product-price {
-    font-size: 12px;
-    margin-bottom: 24px;
-}
+    .divider {
+        margin: 16px 0 14px 0;
+        color: #999;
+        font-size: 10px;
+    }
 
+    form {
+        .user-details {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
 
-.apple-pay {
-    margin: 18px 0 16px 0;
-}
+            .input-box {
+                position: relative;
 
-.divider {
-    margin: 16px 0 14px 0;
-    color: #999;
-    font-size: 10px;
-}
+                input {
+                    border-radius: 8px;
+                    padding: 10px;
+                    transition: $normTransition;
+                    width: 100%;
+                    border: 1px solid #ddd;
+                    font-size: 14px;
+                    padding: 5px 10px;
 
-.user-details {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
+                    &::placeholder {
+                        font-size: 10px;
 
-.input-box {
-    position: relative;
-}
+                        &:hover {
+                            color: rgba(10, 37, 64, 0.7);
+                        }
+                    }
 
-.input-box input {
-    border-radius: 8px;
-    padding: 10px;
-    transition: 0.2s ease;
-}
+                    &:hover,
+                    &:focus {
+                        border-color: #0A2540;
+                        box-shadow: 0 0 5px rgba(10, 37, 64, 0.5);
+                        outline: none;
+                    }
+                }
 
-.input-field:hover,
-.input-field:focus {
-    border-color: #0A2540;
-    box-shadow: 0 0 5px rgba(10, 37, 64, 0.5);
-    outline: none;
-}
+                input:nth-child(2) {
+                    border-radius: 8px 8px 0 0;
+                }
 
-.input-box:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-}
+                input:nth-child(3) {
+                    border-radius: 0 0 8px 8px;
+                }
 
-.input-box:nth-child(2) div:nth-child(2) {
-    display: flex;
-}
+                label {
+                    margin-bottom: 8px;
+                    display: flex;
+                    align-items: start;
+                    color: rgba(66, 84, 102, 1);
+                    font-size: 10px;
+                    transition: $normTransition;
 
-.input-box:nth-child(2) div:nth-child(1) input {
-    border-radius: 8px 8px 0 0;
-}
+                    &:hover {
+                        color: #0A2540;
+                        font-weight: bold;
+                    }
+                }
 
-.input-box:nth-child(2) div:nth-child(1) {
-    position: relative;
-}
+                .visa-p {
+                    position: absolute;
+                    top: 30px;
+                    right: 10px;
+                }
 
-.input-box:nth-child(2) div:nth-child(2) {
-    position: relative;
-}
+                .visa-ph {
+                    position: absolute;
+                    top: 60px;
+                    right: 5px;
+                    width: 29px;
+                    height: 18px;
+                }
 
-.input-box:nth-child(2) div:nth-child(2) input:nth-child(1) {
-    border-radius: 0 0 0 8px;
-}
+                .trans {
+                    position: absolute;
+                    right: 8px;
+                    top: 28px;
+                }
+            }
 
-.input-box:nth-child(2) div:nth-child(2) input:nth-child(2) {
-    border-radius: 0 0 8px 0;
-}
+            .input-box:nth-child(2) {
+                display: flex;
+                flex-direction: column;
 
-.input-box:nth-child(3) .input-field:nth-child(2) {
-    border-radius: 8px 8px 0 0;
-}
+                div:nth-child(1) input {
+                    border-radius: 8px 8px 0 0;
+                }
 
-.input-box:nth-child(3) .input-field:nth-child(3) {
-    border-radius: 0 0 8px 8px;
-}
+                div:nth-child(2) {
+                    display: flex;
 
-.input-box label {
-    margin-bottom: 8px;
-    display: flex;
-    align-items: start;
-    color: rgba(66, 84, 102, 1);
-    font-size: 10px;
-    transition: 0.4s ease;
-}
+                    input:nth-child(1) {
+                        border-radius: 0 0 0 8px;
+                    }
 
-.input-box label:hover {
-    color: #0A2540;
-    font-weight: bold;
-}
+                    input:nth-child(2) {
+                        border-radius: 0 0 8px 0;
+                    }
+                }
+            }
 
-.input-field::placeholder:hover {
-    color: rgba(10, 37, 64, 0.7);
-}
+            .pay-button {
+                background: #0A2540;
+                color: white;
+                border-radius: 8px;
+                padding: 10px 95px;
+                font-size: 11px;
+                width: 100%;
+                transition: all $normTransition;
 
-.input-field {
-    width: 100%;
-    border: 1px solid #ddd;
-    font-size: 14px;
-    padding: 5px 0;
-}
-
-.visa-ph {
-    position: absolute;
-    top: 32px;
-    right: 5px;
-    width: 29px;
-    height: 18px;
-}
-
-.visa-p {
-    position: absolute;
-    top: 12px;
-    right: 10px;
-}
-
-.trans {
-    position: absolute;
-    right: 8px;
-    top: 10px;
-}
-
-.pay-button {
-    background: #0A2540;
-    color: white;
-    border-radius: 8px;
-    padding: 10px 95px;
-    font-size: 11px;
-    width: 100%;
-    transition: all 0.3s ease;
-}
-
-.input-box input::placeholder {
-    font-size: 10px;
-}
-
-.payment-button {
-    transition: all 0.3s ease;
-}
-
-.payment-button:hover {
-    background: #082136;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.02);
-}
-
-.pay-button:hover {
-    background: #082136;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.02);
+                &:hover {
+                    background: #082136;
+                    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+                    transform: scale(1.02);
+                }
+            }
+        }
+    }
 }

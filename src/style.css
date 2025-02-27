@@ -615,14 +615,6 @@ input {
   top: 170px;
   z-index: 5;
   width: 270px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0px 5px 50px rgba(10, 37, 64, 0.5);
-  background: #fff;
-  color: rgb(10, 37, 64);
-  padding: 24px 16px 28px 16px;
-  border-radius: 45px;
 }
 .container-wrapper-1 .chart-container .payment-container .product-image {
   height: 70px;
@@ -640,13 +632,13 @@ input {
   margin-bottom: 2px;
 }
 .container-wrapper-1 .chart-container .payment-container .user-details .input-box .visa-ph {
-  top: 21px;
+  top: 54px;
 }
 .container-wrapper-1 .chart-container .payment-container .user-details .input-box .visa-p {
-  top: 8px;
+  top: 25px;
 }
-.container-wrapper-1 .chart-container .payment-container .user-details .input-box .chart-container .trans {
-  top: 7px;
+.container-wrapper-1 .chart-container .payment-container .user-details .input-box .trans {
+  top: 23px;
 }
 
 .container-wrapper-2 {
@@ -2120,159 +2112,128 @@ input {
   font-size: 18px;
 }
 
-.main-container .payment-container {
-  background: #fff;
-  border-radius: 45px;
-  width: 303px;
-  padding: 24px 16px 28px 16px;
+.payment-container {
   display: flex;
   flex-direction: column;
-  color: rgb(10, 37, 64);
   align-items: center;
+  padding: 24px 16px 28px 16px;
+  border-radius: 45px;
+  background: #fff;
+  width: 303px;
+  color: #0a2540;
   box-shadow: 0px 5px 50px rgba(10, 37, 64, 0.5);
-  animation: shake 0.5s ease infinite;
+  animation: shake 0.3s ease infinite;
 }
-
-.product-image {
+.payment-container .product-image {
   width: 72px;
   height: 80px;
   transition: transform 0.3s ease;
 }
-
-.product-image:hover {
+.payment-container .product-image:hover {
   transform: scale(1.1);
 }
-
-.product-title {
+.payment-container .product-title {
   font-size: 10.14px;
   margin: 15px 0 4px 0;
 }
-
-.product-price {
+.payment-container .product-price {
   font-size: 12px;
   margin-bottom: 24px;
 }
-
-.apple-pay {
+.payment-container .apple-pay {
   margin: 18px 0 16px 0;
 }
-
-.divider {
+.payment-container .divider {
   margin: 16px 0 14px 0;
   color: #999;
   font-size: 10px;
 }
-
-.user-details {
+.payment-container form .user-details {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-
-.input-box {
+.payment-container form .user-details .input-box {
   position: relative;
 }
-
-.input-box input {
+.payment-container form .user-details .input-box input {
   border-radius: 8px;
   padding: 10px;
-  transition: 0.2s ease;
+  transition: 0.3s ease;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  padding: 5px 10px;
 }
-
-.input-field:hover,
-.input-field:focus {
+.payment-container form .user-details .input-box input::-moz-placeholder {
+  font-size: 10px;
+}
+.payment-container form .user-details .input-box input::placeholder {
+  font-size: 10px;
+}
+.payment-container form .user-details .input-box input::-moz-placeholder:hover {
+  color: rgba(10, 37, 64, 0.7);
+}
+.payment-container form .user-details .input-box input::placeholder:hover {
+  color: rgba(10, 37, 64, 0.7);
+}
+.payment-container form .user-details .input-box input:hover, .payment-container form .user-details .input-box input:focus {
   border-color: #0A2540;
   box-shadow: 0 0 5px rgba(10, 37, 64, 0.5);
   outline: none;
 }
-
-.input-box:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-}
-
-.input-box:nth-child(2) div:nth-child(2) {
-  display: flex;
-}
-
-.input-box:nth-child(2) div:nth-child(1) input {
+.payment-container form .user-details .input-box input:nth-child(2) {
   border-radius: 8px 8px 0 0;
 }
-
-.input-box:nth-child(2) div:nth-child(1) {
-  position: relative;
-}
-
-.input-box:nth-child(2) div:nth-child(2) {
-  position: relative;
-}
-
-.input-box:nth-child(2) div:nth-child(2) input:nth-child(1) {
-  border-radius: 0 0 0 8px;
-}
-
-.input-box:nth-child(2) div:nth-child(2) input:nth-child(2) {
-  border-radius: 0 0 8px 0;
-}
-
-.input-box:nth-child(3) .input-field:nth-child(2) {
-  border-radius: 8px 8px 0 0;
-}
-
-.input-box:nth-child(3) .input-field:nth-child(3) {
+.payment-container form .user-details .input-box input:nth-child(3) {
   border-radius: 0 0 8px 8px;
 }
-
-.input-box label {
+.payment-container form .user-details .input-box label {
   margin-bottom: 8px;
   display: flex;
   align-items: start;
   color: rgb(66, 84, 102);
   font-size: 10px;
-  transition: 0.4s ease;
+  transition: 0.3s ease;
 }
-
-.input-box label:hover {
+.payment-container form .user-details .input-box label:hover {
   color: #0A2540;
   font-weight: bold;
 }
-
-.input-field::-moz-placeholder:hover {
-  color: rgba(10, 37, 64, 0.7);
-}
-
-.input-field::placeholder:hover {
-  color: rgba(10, 37, 64, 0.7);
-}
-
-.input-field {
-  width: 100%;
-  border: 1px solid #ddd;
-  font-size: 14px;
-  padding: 5px 0;
-}
-
-.visa-ph {
+.payment-container form .user-details .input-box .visa-p {
   position: absolute;
-  top: 32px;
+  top: 30px;
+  right: 10px;
+}
+.payment-container form .user-details .input-box .visa-ph {
+  position: absolute;
+  top: 60px;
   right: 5px;
   width: 29px;
   height: 18px;
 }
-
-.visa-p {
-  position: absolute;
-  top: 12px;
-  right: 10px;
-}
-
-.trans {
+.payment-container form .user-details .input-box .trans {
   position: absolute;
   right: 8px;
-  top: 10px;
+  top: 28px;
 }
-
-.pay-button {
+.payment-container form .user-details .input-box:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+.payment-container form .user-details .input-box:nth-child(2) div:nth-child(1) input {
+  border-radius: 8px 8px 0 0;
+}
+.payment-container form .user-details .input-box:nth-child(2) div:nth-child(2) {
+  display: flex;
+}
+.payment-container form .user-details .input-box:nth-child(2) div:nth-child(2) input:nth-child(1) {
+  border-radius: 0 0 0 8px;
+}
+.payment-container form .user-details .input-box:nth-child(2) div:nth-child(2) input:nth-child(2) {
+  border-radius: 0 0 8px 0;
+}
+.payment-container form .user-details .pay-button {
   background: #0A2540;
   color: white;
   border-radius: 8px;
@@ -2281,26 +2242,7 @@ input {
   width: 100%;
   transition: all 0.3s ease;
 }
-
-.input-box input::-moz-placeholder {
-  font-size: 10px;
-}
-
-.input-box input::placeholder {
-  font-size: 10px;
-}
-
-.payment-button {
-  transition: all 0.3s ease;
-}
-
-.payment-button:hover {
-  background: #082136;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-  transform: scale(1.02);
-}
-
-.pay-button:hover {
+.payment-container form .user-details .pay-button:hover {
   background: #082136;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
   transform: scale(1.02);
